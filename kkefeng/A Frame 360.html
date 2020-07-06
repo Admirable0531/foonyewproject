@@ -25,8 +25,8 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="city"  src="zxc.jpg">
-        <img id="city-thumb"  src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+        <img id="zxc"  src="zxc.jpg">
+        <img id="zxc-thumb"  src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes-thumb"  src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
         <img id="sechelt-thumb"  src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
         <audio id="click-sound"  src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
@@ -36,14 +36,14 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#city"
+      <a-sky id="image-360" radius="10" src="#zxc"
              animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
              animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
         <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#zxc" data-thumb="#zxc-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
       </a-entity>
 
