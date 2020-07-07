@@ -1,8 +1,10 @@
-div1 {
+#vr {
 	position: relative;
 }
 
-div2 {
+#textbox {
 	position: absolute;
 	z-index: 1000;
+	bottom: 10px;
+	left: 10px;
 }
