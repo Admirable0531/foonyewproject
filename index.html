@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<div style="position:relative;">
+	<div id="vr">
 		<a-scene>
 			<a-entity camera look-controls="reverseMouseDrag: true"></a-entity>
 			<a-sky src="zxc.jpg" rotation="0 -90 0"></a-sky>
@@ -18,9 +18,9 @@
 			<a-entity text="font: mozillavr; value: Via stock font name."></a-entity>
 		</a-scene>
 	</div>
-	<div  style="position:absolute; left:10px; z-index:1000; bottom: 10px;">
-		<textarea cols="50" rows="5" placeholder="Please put in your answers here." style="resize: none;"></textarea>
-		<input type="submit"></input>
+	<div id="textbox">
+		<textarea cols="40" rows="5" placeholder="Please put in your answers here." style="resize: none;"></textarea>
+		<input type="submit" value="Submit"></input>
 	</div>
 </body>
 </html>
