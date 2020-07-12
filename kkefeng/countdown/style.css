@@ -1,26 +1,25 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,')*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Permanent+Marker&display=swap');
 
-#dick
+body
 {
-	/*margin: 0;  
-	padding: 0;
-	font-family: 'Poppins', sans-serif; */
-	background-color: pink;
-
+	font-family: 'Caveat', cursive;
+	background-color: #5CDB95;
 }
-*.center
+
+.center
 {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	width: 100%;
 	transform: translateY(-50%);
 	text-align: center;
 }
+
 h1
 {
 	text-align: center;
 	text-transform: uppercase;
-	color:#000000;
+	color:#05386B;
 	font-size: 3em;
 
 }
@@ -31,32 +30,62 @@ h1 span
 } 
 
 #clock
-{
-	/*display: flex;
-	width: 570px;
-	margin: 0 auto;*/
-	text-align: center;
-	font-size: 4em;
-	margin: 0 auto;
-	
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#clock	
+{
+	
+   	display:block;
+	width: 570px;
+	margin: 0 auto;
+	height: auto;
+	color: black;
+	font-size: 2em;
+	text-align: center
+	
 }
 
-#clock div
+#clock div 
 {
-	/*position: relative;
+
+	position: relative;
 	width: 100px;
 	padding: 20px;
 	margin: 0 5px;
-	background: #000000;
-	color: #FFF;
-	border: 2px solid#000;
+	background-color: white;
+	border: 2px solid #000;
 }
-/*
+
+
+
 #clock div:last-child
 {
-	background: #FFF000;
+	background: #e91e63;
 }
+/*
 #clock div:before
 {
 	content: '';
@@ -67,6 +96,7 @@ h1 span
 	height: 50%;
 	background: rgba(255,255,255,.2);
 }
+
 #clock div span
 {
 	display: block;
@@ -86,4 +116,4 @@ h1 span
 	font-weight: 800;
 	margin-top: -10px;
 	
-}
+}	
