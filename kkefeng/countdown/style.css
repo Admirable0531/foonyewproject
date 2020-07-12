@@ -1,3 +1,6 @@
+/* Idk why you here but please dont hack this website. I didnt pay for this */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Permanent+Marker&display=swap');
 
 body
@@ -20,53 +23,28 @@ h1
 	text-align: center;
 	text-transform: uppercase;
 	color:#05386B;
-	font-size: 3em;
+	font-size: 4em;
 
 }
 h1 span
 {
-	font-size: 4em;
+	font-size: 5em;
 	line-height: .8em;
 } 
 
-#clock
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 #clock	
 {
-	
-   	display:block;
+	background-color: pink;
+   	display: flex;
+   	text-align: center;
 	width: 570px;
 	margin: 0 auto;
 	height: auto;
-	color: black;
-	font-size: 2em;
-	text-align: center
+	color: white;
+	font-size: 3em;
 	
 }
+/*
 
 #clock div 
 {
@@ -85,7 +63,7 @@ h1 span
 {
 	background: #e91e63;
 }
-/*
+
 #clock div:before
 {
 	content: '';
