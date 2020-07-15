@@ -1,0 +1,37 @@
+/* Idk why you are here but I want to tell you hack is illegal*/
+/* 学校没有给我钱做这个project，放过我吧*/
+
+@import url( https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet)
+
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: font-family: 'Balsamiq Sans', cursive;
+}
+
+body
+{
+	background: #000 url(bg.jpg);
+	background-size: 70px auto
+	background-attachment: fixed;
+	background-blend-mode: hard-light;
+}
+
+
+.container 
+{
+	position: absolute;
+	top: 80px; 
+	left: 100px;
+	right: 100px;
+	bottom: 80px;
+	background: url(bg.jpg);
+	background-attachment: fixed; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 50px 50px rgba(0,0,0,0.5), 0 0 0 100px rgba(0,0,0,.10);	
+
+}
