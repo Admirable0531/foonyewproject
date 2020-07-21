@@ -38,6 +38,7 @@ h1
 	font-weight: 100; /*set thick or thin characters*/
 	font-color: black;
 	font-family: 'Ma Shan Zheng', cursive;
+	font-stretch: expanded;
 }
 
 #demo
@@ -46,6 +47,7 @@ h1
 	word-spacing: 10px;
 	font-family: 'Ma Shan Zheng', cursive;
 }
+
 
 hr{
 

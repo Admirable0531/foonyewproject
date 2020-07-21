@@ -10,16 +10,20 @@
 			<div class="middle">
 
 			<h1>Countdown to XiaoQing 2020</h1>
+			
 
 			<hr>
 
 			<p id = "demo" style="font-size: 30px"></p>
+      
+
+ 
 
 			</div>
 		</div>
 	</body>
 		
-		<!-- yes I copied  --> 
+		
 		  <script type="text/javascript">
     //set date for count down
     var countDownDate = new Date("Aug 8, 2020 00:00:00").getTime();
@@ -36,15 +40,25 @@
           var seconds = Math.floor((distance % (1000 * 60)) / (1000 ));
           //output the result in element demo
           document.getElementById('demo').innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+
           //if the count down is over , write some text
           if(distance < 0) {
             clearInterval(countDownFunction);
-            document.getElementById("demo").innerHTML = "你家着火了怎么不去灭一灭";
-          }
+            document.getElementById("demo").innerHTML = "Redirect to Xiao Qing Offical Page";
+            setTimeout("location.href = 'file:///D:/KkeFeng/GIT/foonyewproject/kkefeng/Registration/index.html';", 3000); //redirect delay 3sec
 
-        }, 1000);
+            
+           }
+         //delay  
+         }, 1000); 
 
+         
+          
+    
     </script>
-		</script>
+		
 </html>
+
+
 
