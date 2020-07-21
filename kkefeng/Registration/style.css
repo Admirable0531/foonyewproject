@@ -134,6 +134,7 @@ h2
     }
 }
 
+/*scrollbar*/
 body::-webkit-scrollbar {
   width: 1em;
 }
