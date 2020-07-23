@@ -1,5 +1,4 @@
 /* Idk why you are here but I want to tell you hack is illegal*/
-/* 学校没有给我钱做这个project，放过我吧*/
 
 body, html
 {
@@ -10,12 +9,12 @@ body, html
 
 .bg 
 {
-	background-image: url(1.jpg);
+	background-image: url(fyhs.jpg);
 	height: 100%; /*full screen*/
 	background-position: center;
 	background-size: cover;
 	position: relative;
-	color: #fff; /*white text*/
+	color: black; /*white text*/
 	font-family: Prime;
 
 }
@@ -29,6 +28,7 @@ body, html
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	user-select: none;
 }
 
 h1
@@ -55,3 +55,6 @@ hr{
 	width: 80%;
 	border: 1.5px solid #fff;
 }
+
+
+/*FoonYewProject-Front-end*/
