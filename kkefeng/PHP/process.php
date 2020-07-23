@@ -1,14 +1,24 @@
 <html>
 <head>
 <title>Why you are here</title>
-<link rel="stylesheet" href="phpstyle.css">
+<link rel="stylesheet" href="pstyle.css">
 </head>
 <body>
 
 <?php
-$name = $_POST ["name"];
+echo $_POST ["name"];
+echo "<br>";
+echo $_POST ["number"];
+echo "<br>";
+echo $_POST ["email"];
+echo "<br>";
+echo $_POST ["studentid"];
+echo "<br>";
+echo $_POST ["school"];
 
-	echo " development purpose";
+
+
+	
 ?>
 
 
