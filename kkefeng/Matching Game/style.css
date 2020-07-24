@@ -1,0 +1,149 @@
+@font-face
+{
+	font-family: 'Rowdies', cursive;
+}
+
+@font-face
+{
+	font-family: 'Rowdies', cursive;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+html
+{
+	min-height: 100vh;
+}
+
+body
+{
+	margin: 0;
+	background: radial-gradient(#29323c,  #485563); 
+}
+
+.title
+{
+	color:white;
+	font-family: 'Rowdies', cursive;
+	font-weight: normal;
+	text-align: center;
+	font-size: 5em;
+}
+.game-info-container
+{
+	grid-column: 1 / -1;
+	display: flex;
+	justify-content: space-between;
+
+}
+.game-info
+{
+	color: pink;
+	font-family: 'Rowdies', cursive;
+	text-align: center;
+	font-size:4em;
+}
+
+.game-container
+{
+	display: grid;
+	grid-template-columns:repeat(4, auto);
+	grid-gap: 10px; 
+	margin: 50px;
+	justify-content: center;
+	perspective: 500px;
+}
+
+.card
+{
+	position: relative;
+	height: 175px;
+	width:125px;
+}
+
+.card-face
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	backface-visibility: hidden;
+	border-radius: 12px;
+	border-width: 2px;
+	border-style: solid;
+	transition: transform 500ms ease-in-out;
+	backface-visibility: hidden; /*！！！！*/
+}
+.card.visible .card-back
+{
+	transform: rotate(-180deg);
+}
+
+.card.visible .card-front
+{
+	transform: rotateY(0)
+}
+
+.card-back /*章鱼爸爸的背景*/
+{
+	background-color: pink;
+	border-color: black;
+	transform: rotateY(0); /*！！！！*/
+}
+
+.dab /*章鱼爸爸*/
+{
+	align-self: flex-start;
+	transition: transform 100ms ease-in-out;
+	transform: translateY(40px);
+	
+}
+
+.card-back:hover .dab
+{
+	transform: translateY(0);
+
+}
+
+.star/*派大星爸爸*/
+{
+	position: relative;
+  	transition: transform 100ms ease-in-out;
+  	transform: scale(.9);
+}
+
+.card-front:hover .star
+{
+	transform: scale(1);
+}
+
+
+.card-front /*派大星爸爸的背景*/
+{
+	background-color: #E6E6FA;
+	border-color: black;
+	transform: rotateY(180deg);
+}
+
+/*scrollbar*/
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: pink;
+  outline: 1px solid slategrey;
+}
+
+/* resource: https://www.youtube.com/watch?v=28VfzEiJgy4*/
+/*FoonYewProject Front-end*/
