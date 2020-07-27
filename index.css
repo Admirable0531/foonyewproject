@@ -2,10 +2,6 @@
 	position: relative;
 }
 
-#textbox {
-	position: absolute;
+#box2 {
 	z-index: 1000;
-	bottom: 10px;
-	left: 10px;
 }
-
