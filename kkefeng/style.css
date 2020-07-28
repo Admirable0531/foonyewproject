@@ -57,7 +57,7 @@ body
 	perspective: 500px;
 }
 
-.card
+.card:hover
 {
 	position: relative;
 	height: 175px;
@@ -80,28 +80,29 @@ body
 	transition: transform 500ms ease-in-out;
 	backface-visibility: hidden; /*！！！！*/
 }
-.card:hover .card-back
+.card:visible .card-back
 {
 	transform: rotate(-180deg);
 }
 
-.card:hover .card-front
+.card:visible .card-front
 {
-	transform: rotateY(0)
+	transform: rotateY(0);
 }
 
 .card-back /*章鱼爸爸的背景*/
 {
 	background-color: pink;
 	border-color: black;
-	transform: rotateY(0); /*！！！！*/
+
 }
 
 .dab /*章鱼爸爸*/
 {
 	align-self: flex-start;
-	transition: transform 100ms ease-in-out;
 	transform: translateY(40px);
+	transition: transform 100ms ease-in-out;
+	
 	
 }
 
