@@ -43,12 +43,15 @@
           if(distance < 0) {
             clearInterval(countDownFunction);
             document.getElementById("demo").innerHTML = "Redirect to Xiao Qing Offical Page";
-            setTimeout("location.href = 'file:///D:/KkeFeng/GIT/foonyewproject/kkefeng/Registration/index.html';", 3000); //redirect delay 3sec
-
-            
+            setTimeout(function(){
+              $templateElement.hide();
+          "location.href = 'file:///D:/KkeFeng/GIT/foonyewproject/kkefeng/Registration/index.html';", 3000;//redirect delay 3sec
+                }
            }
          //delay  
          }, 1000); 
+
+    
 
          
           
