@@ -6,56 +6,116 @@
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script src="/js/index.js"></script>
-	<script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
-	<script>
-		AFRAME.registerComponent('cursor-listener', {
-			init: function () {
-				var skyEl = this.el.sceneEl.querySelector('#background');
-				
-				this.el.addEventListener('click', function () {
-					document.getElementById('scene1').setAttribute('visible', 'false');
-					document.getElementById('scene2').setAttribute('visible', 'true');
-				});
-			}  
-		});
-	</script> 
+
 	<script type="text/javascript">
+		function clear() {
+			document.getElementById('scene1').setAttribute('visible', 'false');
+			document.getElementById('scene2').setAttribute('visible', 'false');
+			document.getElementById('scene3').setAttribute('visible', 'false');
+			document.getElementById('scene4').setAttribute('visible', 'false');
+			document.getElementById('scene5').setAttribute('visible', 'false');
+			setInterval(100);
+		}
+
 		function setScene1() {
 			document.getElementById('scene1').setAttribute('visible', 'true');
-			document.getElementById('scene2').setAttribute('visible', 'false');
 		}
+
+		function setScene2() {
+			document.getElementById('scene2').setAttribute('visible', 'true');
+		}
+
+		function setScene3() {
+			document.getElementById('scene3').setAttribute('visible', 'true');
+		}
+
+		function setScene4() {
+			document.getElementById('scene4').setAttribute('visible', 'true');
+		}
+
+		function setScene5() {
+			document.getElementById('scene5').setAttribute('visible', 'true');
+		}
+
 	</script>
+
+
+	<script>
+
+		AFRAME.registerComponent('cursor-listener', {
+			init: function () {
+				document.querySelector('#box1').addEventListener('click', function () {
+					document.getElementById('scene1').setAttribute('visible', 'false');
+					document.getElementById('scene2').setAttribute('visible', 'true');
+
+				});
+
+				document.querySelector('#box2').addEventListener('click', function () {
+					document.getElementById('scene2').setAttribute('visible', 'false');
+					document.getElementById('scene1').setAttribute('visible', 'true');
+
+				});
+			}
+		});
+	</script> 
 
 </head>
 <body>
 	<div id="vr">
 		<a-scene>
 			<a-assets>
-				<img id="ryan" src="roomryan.jpg" rotation="0 -90 0">
-				<img id="secondfloor" src="secondfloor.jpg" rotation="0 -90 0">
+				<img id="hz1" src="Pictures/1.JPG" rotation="0 -90 0">
+				<img id="hz2" src="Pictures/2.0.JPG" rotation="0 -90 0">
+				<img id="j1" src="Pictures/2.1.JPG" rotation="0 -90 0">
+				<img id="j2" src="Pictures/2.2.JPG" rotation="0 -90 0">
+				<img id="j3" src="Pictures/2.3.JPG" rotation="0 -90 0">
 			</a-assets>
 
 			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
-
-			<a-sky id="background" src="#ryan"></a-sky>
-
+			
 			<a-entity id="scene1">
-				<a-sky src="#ryan"></a-sky>
-				<a-box color="blue" cursor-listener position="20 -5 3"> </a-cube>
+				<a-sky src="#hz1" visible="true"></a-sky>
+				<a-box id="box1" color="blue" cursor-listener position="20 -5 0"> </a-box>
 				</a-entity>
 
 				<a-entity id="scene2" visible="false">
-					<a-sky src="#secondfloor"></a-sky>
-					<a-box color="green" onclick="setScene1()" position="20 -5 -10"> </a-cube>
+					<a-sky src="#hz2"></a-sky>
+					<a-box id="box2" color="green" cursor-listener position="20 -5 0"> </a-box>
 					</a-entity>
 
-				</a-scene>
-			</div>
+					<a-entity id="scene3" visible="false">
+						<a-sky src="#j1"></a-sky>
+						<a-box color="blue" onclick="clear(); setScene4()" position="20 -5 20"> </box>
+						</a-entity>
 
-			<div id="textbox">
-				<textarea cols="40" rows="5" placeholder="Please put in your answers here." style="resize: none;"></textarea>
-				<input type="submit" value="Submit"></input>
-			</div>
+						<a-entity id="scene4" visible="false">
+							<a-sky src="#j2"></a-sky>
+							<a-box color="green" onclick="clear(); setScene5()" position="20 -5 20"> </a-cube>
+							</a-entity>
 
-		</body>
-		</html>
+							<a-entity id="scene5" visible="false">
+								<a-sky src="#j3"></a-sky>
+								<a-box color="blue" onclick="clear(); setScene6()" position="20 -5 20"> </a-cube>
+								</a-entity>
+							</a-scene>
+						</div>
+					</body>
+					</html>
+
+
+
+<!--
+Resources
+
+https://stackoverflow.com/questions/49322305/hiding-an-embedded-aframe-scene-
+
+
+
+
+
+
+
+
+
+
+-->
