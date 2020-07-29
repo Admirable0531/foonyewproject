@@ -1,0 +1,155 @@
+<!--
+How many years is 1 human year to a dog?
+But the conventional wisdom that one dog year equals seven human years is an oversimplified view of how old your dog is in human years. Although a dog's age averages out this way, there is quite a bit of variation. For example, dogs mature more quickly than children in the first couple of years.
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>宽柔中学</title>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="/js/index.js"></script>
+
+	<script type="text/javascript">
+		function clearAll() {
+					document.querySelector('.scene1').setAttribute('visible', 'false');
+					document.querySelector('.scene2').setAttribute('visible', 'false');
+					document.querySelector('.scene3').setAttribute('visible', 'false');
+					document.querySelector('.scene4').setAttribute('visible', 'false');
+					document.querySelector('.scene5').setAttribute('visible', 'false');
+		}
+
+		function scene1() {
+					document.querySelector('.scene1').setAttribute('visible', 'true');
+					document.querySelector('a-sky').setAttribute('src', '#hz1');
+		}
+
+
+		function scene2() {
+					document.querySelector('.scene2').setAttribute('visible', 'true');
+					document.querySelector('a-sky').setAttribute('src', '#hz2');
+		}
+
+
+		function scene3() {
+					document.querySelector('.scene3').setAttribute('visible', 'true');
+					document.querySelector('a-sky').setAttribute('src', '#j1');
+		}
+
+
+		function scene4() {
+					document.querySelector('.scene4').setAttribute('visible', 'true');
+					document.querySelector('a-sky').setAttribute('src', '#j2');
+		}
+
+		function scene5() {
+					document.querySelector('.scene5').setAttribute('visible', 'true');
+					document.querySelector('a-sky').setAttribute('src', '#j3');
+		}
+
+		AFRAME.registerComponent('cursor-listener1', {
+			init: function () {
+				document.getElementById('box1').addEventListener('click', function () {
+					if (document.querySelector("a-sky").getAttribute('src') == "#hz1") {
+					console.log("plz say it works");
+					clearAll();
+					scene2();
+					} else {	}
+				});
+
+			}
+		});
+
+		AFRAME.registerComponent('cursor-listener2', {
+			init: function () {
+				document.getElementById('box2').addEventListener('click', function () {
+					if (document.querySelector("a-sky").getAttribute('src') == "#hz2") {
+					console.log("plz say it works for 2");
+					clearAll();
+					scene3();
+					} else {	}
+				});
+
+			}
+		});
+
+		AFRAME.registerComponent('cursor-listener3', {
+			init: function () {
+				document.getElementById('box3').addEventListener('click', function () {
+					if (document.querySelector("a-sky").getAttribute('src') == "#j1") {
+					console.log("plz say it works for 3");
+					clearAll();
+					scene4();
+					} else {	}
+				});
+
+			}
+		});
+
+		AFRAME.registerComponent('cursor-listener4', {
+			init: function () {
+				document.getElementById('box4').addEventListener('click', function () {
+					if (document.querySelector("a-sky").getAttribute('src') == "#j2") {
+					console.log("plz say it works for 4");
+					clearAll();
+					scene5();
+					} else {	}
+				});
+
+			}
+		});
+
+		AFRAME.registerComponent('cursor-listener5', {
+			init: function () {
+				document.getElementById('box5').addEventListener('click', function () {
+					if (document.querySelector("a-sky").getAttribute('src') == "#j3") {
+					console.log("plz say it works for 5");
+					clearAll();
+					scene1();
+					} else {	}
+				});
+
+			}
+		});
+	</script> 
+
+</head>
+<body>
+	<div id="vr">
+		<a-scene>
+			<a-assets>
+				<img id="hz1" src="Pictures/1.JPG" rotation="0 -90 0">
+				<img id="hz2" src="Pictures/2.0.JPG" rotation="0 0 0">
+				<img id="j1" src="Pictures/2.1.JPG" rotation="0 -90 0">
+				<img id="j2" src="Pictures/2.2.JPG" rotation="0 -90 0">
+				<img id="j3" src="Pictures/2.3.JPG" rotation="0 -90 0">
+			</a-assets>
+
+			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
+
+			<a-sky id="background" src="#hz1"></a-sky>
+			
+			<a-entity class="scene1" visible="true">
+				<a-box id="box1" color="blue" cursor-listener1 position="-5 -5 -60" visible="true" depth="4" height="4" width="4"> </a-box>
+			</a-entity>
+
+			<a-entity class="scene2" visible="false">
+				<a-box id="box2" color="green" cursor-listener2 position="10 -5 0"> </a-box> 
+			</a-entity>
+
+			<a-entity class="scene3" visible="false">
+				<a-box id="box3" color="blue" cursor-listener3 position="5 -5 0"> </a-box>
+			</a-entity>
+
+			<a-entity class="scene4" visible="false">
+				<a-box id="box4" color="green" cursor-listener4 position="0 -5 0"> </a-box> 
+			</a-entity>
+
+			<a-entity class="scene5" visible="false">
+				<a-box id="box5" color="blue" cursor-listener5 position="-5 -5 0"> </a-box>
+			</a-entity>
+
+		</a-scene>
+	</div>
+</body>
+</html>

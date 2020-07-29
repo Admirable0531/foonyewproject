@@ -11,9 +11,6 @@
 		function clear() {
 			document.getElementById('scene1').setAttribute('visible', 'false');
 			document.getElementById('scene2').setAttribute('visible', 'false');
-			document.getElementById('scene3').setAttribute('visible', 'false');
-			document.getElementById('scene4').setAttribute('visible', 'false');
-			document.getElementById('scene5').setAttribute('visible', 'false');
 			setInterval(100);
 		}
 
@@ -25,18 +22,6 @@
 			document.getElementById('scene2').setAttribute('visible', 'true');
 		}
 
-		function setScene3() {
-			document.getElementById('scene3').setAttribute('visible', 'true');
-		}
-
-		function setScene4() {
-			document.getElementById('scene4').setAttribute('visible', 'true');
-		}
-
-		function setScene5() {
-			document.getElementById('scene5').setAttribute('visible', 'true');
-		}
-
 	</script>
 
 
@@ -45,6 +30,7 @@
 		AFRAME.registerComponent('cursor-listener', {
 			init: function () {
 				document.querySelector('#box1').addEventListener('click', function () {
+					
 					document.getElementById('scene1').setAttribute('visible', 'false');
 					document.getElementById('scene2').setAttribute('visible', 'true');
 
@@ -73,30 +59,16 @@
 
 			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
 			
-			<a-entity id="scene1">
-				<a-sky src="#hz1" visible="true"></a-sky>
+			<a-entity id="scene1" visible="true">
+				<a-sky src="#hz1" ></a-sky>
 				<a-box id="box1" color="blue" cursor-listener position="20 -5 0"> </a-box>
-				</a-entity>
+			</a-entity>
 
-				<a-entity id="scene2" visible="false">
-					<a-sky src="#hz2"></a-sky>
-					<a-box id="box2" color="green" cursor-listener position="20 -5 0"> </a-box>
-					</a-entity>
+			<a-entity id="scene2" visible="false">
+				<a-sky src="#hz2"></a-sky>
+				<a-box id="box2" color="green" cursor-listener position="20 -5 0"> </a-box>
+			</a-entity>
 
-					<a-entity id="scene3" visible="false">
-						<a-sky src="#j1"></a-sky>
-						<a-box color="blue" onclick="clear(); setScene4()" position="20 -5 20"> </box>
-						</a-entity>
-
-						<a-entity id="scene4" visible="false">
-							<a-sky src="#j2"></a-sky>
-							<a-box color="green" onclick="clear(); setScene5()" position="20 -5 20"> </a-cube>
-							</a-entity>
-
-							<a-entity id="scene5" visible="false">
-								<a-sky src="#j3"></a-sky>
-								<a-box color="blue" onclick="clear(); setScene6()" position="20 -5 20"> </a-cube>
-								</a-entity>
 							</a-scene>
 						</div>
 					</body>
