@@ -63,7 +63,7 @@ h2
 }
 
 
-/*
+
 
 .clock-days，.clock-hours，.clock-mins, .clock-sec
 {
@@ -93,7 +93,7 @@ h2
 }
 
 
-/*RGB
+
 .clock-days div:before, .clock-hours div:before, .clock-mins div:before, .clock-sec div:before
 {
 	content: '';
