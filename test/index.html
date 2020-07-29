@@ -5,114 +5,11 @@ But the conventional wisdom that one dog year equals seven human years is an ove
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>宽柔中学</title>
+	<title>宽柔中学的趣味导览-</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script src="/js/index.js"></script>
-
-	<script type="text/javascript">
-		function clearAll() {
-					document.querySelector('.scene1').setAttribute('visible', 'false');
-					document.querySelector('.scene2').setAttribute('visible', 'false');
-					document.querySelector('.scene3').setAttribute('visible', 'false');
-					document.querySelector('.scene4').setAttribute('visible', 'false');
-					document.querySelector('.scene5').setAttribute('visible', 'false');
-		}
-
-		function scene1() {
-					document.querySelector('.scene1').setAttribute('visible', 'true');
-					document.querySelector('a-sky').setAttribute('src', '#hz1');
-		}
-
-
-		function scene2() {
-					document.querySelector('.scene2').setAttribute('visible', 'true');
-					document.querySelector('a-sky').setAttribute('src', '#hz2');
-		}
-
-
-		function scene3() {
-					document.querySelector('.scene3').setAttribute('visible', 'true');
-					document.querySelector('a-sky').setAttribute('src', '#j1');
-		}
-
-
-		function scene4() {
-					document.querySelector('.scene4').setAttribute('visible', 'true');
-					document.querySelector('a-sky').setAttribute('src', '#j2');
-		}
-
-		function scene5() {
-					document.querySelector('.scene5').setAttribute('visible', 'true');
-					document.querySelector('a-sky').setAttribute('src', '#j3');
-		}
-
-		AFRAME.registerComponent('cursor-listener1', {
-			init: function () {
-				document.getElementById('box1').addEventListener('click', function () {
-					if (document.querySelector("a-sky").getAttribute('src') == "#hz1") {
-					console.log("plz say it works");
-					clearAll();
-					scene2();
-					} else {	}
-				});
-
-			}
-		});
-
-		AFRAME.registerComponent('cursor-listener2', {
-			init: function () {
-				document.getElementById('box2').addEventListener('click', function () {
-					if (document.querySelector("a-sky").getAttribute('src') == "#hz2") {
-					console.log("plz say it works for 2");
-					clearAll();
-					scene3();
-					} else {	}
-				});
-
-			}
-		});
-
-		AFRAME.registerComponent('cursor-listener3', {
-			init: function () {
-				document.getElementById('box3').addEventListener('click', function () {
-					if (document.querySelector("a-sky").getAttribute('src') == "#j1") {
-					console.log("plz say it works for 3");
-					clearAll();
-					scene4();
-					} else {	}
-				});
-
-			}
-		});
-
-		AFRAME.registerComponent('cursor-listener4', {
-			init: function () {
-				document.getElementById('box4').addEventListener('click', function () {
-					if (document.querySelector("a-sky").getAttribute('src') == "#j2") {
-					console.log("plz say it works for 4");
-					clearAll();
-					scene5();
-					} else {	}
-				});
-
-			}
-		});
-
-		AFRAME.registerComponent('cursor-listener5', {
-			init: function () {
-				document.getElementById('box5').addEventListener('click', function () {
-					if (document.querySelector("a-sky").getAttribute('src') == "#j3") {
-					console.log("plz say it works for 5");
-					clearAll();
-					scene1();
-					} else {	}
-				});
-
-			}
-		});
-	</script> 
-
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.foonyew.edu.my/favicon/favicon-32x32.png">
 </head>
 <body>
 	<div id="vr">
