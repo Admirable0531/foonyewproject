@@ -19,7 +19,7 @@ AFRAME.registerComponent('cursor-listener1', {
 			if (document.querySelector("a-sky").getAttribute('src') == "#hz1") {
 				console.log("plz say it works");
 				clearAll();
-				scene2();
+				setscene(2);
 			} else {	}
 		});
 
