@@ -9,7 +9,7 @@ body, html
 
 .bg 
 {
-	background-image: url(fyhs.jpg);
+	background-image: url(fyhs.png);
 	height: 100%; /*full screen*/
 	background-position: center;
 	background-size: cover;
