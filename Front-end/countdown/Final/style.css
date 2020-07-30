@@ -17,7 +17,7 @@ body, html
 
 .bg 
 {
-	background-image: url(final.png);
+	background-image: url(test.png);
 	height: 100%; /*full screen*/
 	background-position: center;
 	background-size: cover;
@@ -61,7 +61,7 @@ body, html
 }
 */
 
-hr{ /*白线*/
+hr{ /*红线*/
 
 	margin: auto;
 	width: 80%;
