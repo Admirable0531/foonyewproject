@@ -22,5 +22,5 @@ function run(s) {
 	if ("#" + s == document.getElementById('background').getAttribute('src')) {
 		setscene(s+1);
 	}
-	console.log("this is scene " + s)
+	console.log("this is scene " + (s+1))
 }
