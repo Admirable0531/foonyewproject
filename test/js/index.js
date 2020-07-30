@@ -29,10 +29,10 @@ AFRAME.registerComponent('cursor-listener1', {
 AFRAME.registerComponent('cursor-listener2', {
 	init: function () {
 		document.getElementById('box2').addEventListener('click', function () {
-			if (document.querySelector("a-sky").getAttribute('src') == "#hz2") {
+			if (document.querySelector("a-sky").getAttribute('src') == "#2") {
 				console.log("plz say it works for 2");
 				clearAll();
-				scene3();
+				setscene(3);
 			} else {	}
 		});
 
@@ -42,10 +42,10 @@ AFRAME.registerComponent('cursor-listener2', {
 AFRAME.registerComponent('cursor-listener3', {
 	init: function () {
 		document.getElementById('box3').addEventListener('click', function () {
-			if (document.querySelector("a-sky").getAttribute('src') == "#j1") {
+			if (document.querySelector("a-sky").getAttribute('src') == "#3") {
 				console.log("plz say it works for 3");
 				clearAll();
-				scene4();
+				setscene(4);
 			} else {	}
 		});
 
@@ -55,10 +55,10 @@ AFRAME.registerComponent('cursor-listener3', {
 AFRAME.registerComponent('cursor-listener4', {
 	init: function () {
 		document.getElementById('box4').addEventListener('click', function () {
-			if (document.querySelector("a-sky").getAttribute('src') == "#j2") {
+			if (document.querySelector("a-sky").getAttribute('src') == "#4") {
 				console.log("plz say it works for 4");
 				clearAll();
-				scene5();
+				setscene(5);
 			} else {	}
 		});
 
@@ -68,7 +68,7 @@ AFRAME.registerComponent('cursor-listener4', {
 AFRAME.registerComponent('cursor-listener5', {
 	init: function () {
 		document.getElementById('box5').addEventListener('click', function () {
-			if (document.querySelector("a-sky").getAttribute('src') == "#j3") {
+			if (document.querySelector("a-sky").getAttribute('src') == "#5") {
 				console.log("plz say it works for 5");
 				clearAll();
 				scene1();
