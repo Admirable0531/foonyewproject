@@ -7,7 +7,7 @@ But the conventional wisdom that one dog year equals seven human years is an ove
 	<meta charset="utf-8">
 	<title>宽柔中学的趣味导览-</title>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="/js/index.js"></script>
 	<link rel="icon" type="image/png" sizes="32x32" href="https://www.foonyew.edu.my/favicon/favicon-32x32.png">
 </head>
@@ -15,11 +15,19 @@ But the conventional wisdom that one dog year equals seven human years is an ove
 	<div id="vr">
 		<a-scene>
 			<a-assets>
+<<<<<<< HEAD
 				<img id="1" src="Pictures/1.JPG" rotation="0 -90 0">
 				<img id="2" src="Pictures/2.JPG" rotation="0 0 0">
 				<img id="3" src="Pictures/3.JPG" rotation="0 -90 0">
 				<img id="4" src="Pictures/4.JPG" rotation="0 -90 0">
 				<img id="5" src="Pictures/5.JPG" rotation="0 -90 0">
+=======
+				<img id="hz1" src="Pictures/1.JPG" rotation="0 -90 0">
+				<img id="hz2" src="Pictures/2.0.JPG" rotation="0 -90 0">
+				<img id="j1" src="Pictures/2.1.JPG" rotation="0 -90 0">
+				<img id="j2" src="Pictures/2.2.JPG" rotation="0 -90 0">
+				<img id="j3" src="Pictures/2.3.JPG" rotation="0 -90 0">
+>>>>>>> 2a6993c156e8d0a7f689345a803666bf704eb406
 			</a-assets>
 
 			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
@@ -27,7 +35,7 @@ But the conventional wisdom that one dog year equals seven human years is an ove
 			<a-sky id="background" src="#hz1"></a-sky>
 			
 			<a-entity class="scene1" visible="true">
-				<a-box id="box1" color="blue" cursor-listener1 position="-5 -5 -60" visible="true" depth="4" height="4" width="4"> </a-box>
+				<a-box id="box1" color="blue" cursor-listener1 position="-5 -5 -60" depth="4" height="4" width="4"> </a-box>
 			</a-entity>
 
 			<a-entity class="scene2" visible="false">
