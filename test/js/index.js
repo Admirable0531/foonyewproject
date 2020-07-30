@@ -16,7 +16,7 @@ function setscene(scene) {
 AFRAME.registerComponent('cursor-listener1', {
 	init: function () {
 		document.getElementById('box1').addEventListener('click', function () {
-			if (document.querySelector("a-sky").getAttribute('src') == "#hz1") {
+			if (document.querySelector("a-sky").getAttribute('src') == "#1") {
 				console.log("plz say it works");
 				clearAll();
 				setscene(2);
@@ -68,7 +68,7 @@ AFRAME.registerComponent('cursor-listener4', {
 AFRAME.registerComponent('cursor-listener5', {
 	init: function () {
 		document.getElementById('box5').addEventListener('click', function () {
-			if (document.querySelector("a-sky").getAttribute('src') == "#5") {
+			if (document.querySelector("a-sky").getAttribute('src') == "#5	") {
 				console.log("plz say it works for 5");
 				clearAll();
 				scene1();
