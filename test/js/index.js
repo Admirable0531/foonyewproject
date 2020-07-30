@@ -1,14 +1,20 @@
+window.onload = function() {
+	clearAll();
+	setscene(1);
+	console.log("ready");
+}
+
 function clearAll() {
-	for (var i=1; i<=4; i++) {
+	for (var i=1; i<=5; i++) {
 	var scene = ".scene" + i;
 	console.log(scene);
-	document.querySelector(scene).setAttribute('visible', 'false');
+	document.querySelector("#box" + i).setAttribute('scale', '0 0 0');
 	}
 }
 
 function setscene(scene) {
 	var s = ".scene" + scene;
-	document.querySelector(s).setAttribute('visible', 'true');
+	document.querySelector("#box" + scene).setAttribute('scale', '1 1 1');
 	document.querySelector('a-sky').setAttribute('src', '#' + scene);
 }
 
@@ -66,12 +72,12 @@ AFRAME.registerComponent('cursor-listener4', {
 });
 
 AFRAME.registerComponent('cursor-listener5', {
-	init: function () {
+	init: function () {		
 		document.getElementById('box5').addEventListener('click', function () {
-			if (document.querySelector("a-sky").getAttribute('src') == "#5	") {
+			if (document.querySelector("a-sky").getAttribute('src') == "#5") {
 				console.log("plz say it works for 5");
 				clearAll();
-				scene1();
+				setscene(6);
 			} else {	}
 		});
 
