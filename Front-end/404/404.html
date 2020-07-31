@@ -1,20 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">	
-		<title>404</title>
-		<link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	</head>
-	<body>
-		<section class="cases-links">
-			<h1 class="error-404">404 Page Not Found! </h1>
-			<p class="error-404-p">The page you were looking for does not exist! </p>
-
-		 </section>
+<head>
+<title>404 Page Error</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/FOON_YEW_HIGH_SCHOOL_LOGO.jpg/1200px-FOON_YEW_HIGH_SCHOOL_LOGO.jpg" type="image/jpg" sizes="60x60">
+	<link href="CSS5.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container">
+		<div class="content">
+			<h2>404</h2>
+			<h4>Opps! Page not found</h4>
+			<p>The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
+			<a href="https://foonyewproject.000webhostapp.com/">Back To Home</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var container = document.getElementById('container');
+	window.onmousemove = function(e){
+		var x = - e.clientX/5,
+			y = - e.clientY/5;
+		container.style.backgroundPositionX = x + 'px';
+		container.style.backgroundPositionY = y + 'px';
+	}
+	</script>
 	</body>
-		
-<script type="text/javascript" src="timer.js" async></script>
 </html>
 
-<!-- FoonYewProject-Front-end -->
+<!--Reference
+https://youtu.be/PbKOX2tkHlI-->
