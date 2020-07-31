@@ -1,0 +1,4 @@
+Landing Page 就是countdown 
+时间到了redirect到registration page
+submit之后才进360
+导览最后有一个ending page
