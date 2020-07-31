@@ -1,7 +1,7 @@
-//set date for count down
+  //set date for count down
     
 
-    var countDownDate = new Date("Jul 30, 2020 00:00:00").getTime();
+    var countDownDate = new Date("Aug 8, 2020 08:08:00 GMT+0800").getTime();
     // update the counter down every 1 sec
     var countDownFunction = setInterval(function(){
           // get today date
@@ -21,7 +21,7 @@
           if(distance < 0) {
             clearInterval(countDownFunction);
             document.getElementById("timer").innerHTML = "Redirect to Xiao Qing Offical Page";
-            setTimeout("location.href = 'file:///C:/Users/Admin/Desktop/FYP/Front-end/Registration/index.html';",3000);//拜托给时间过完才进去plsss
+            setTimeout("location.href = '1.html';",3000);//拜托给时间过完才进去plsss
                 }
            
         
