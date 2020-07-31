@@ -1,13 +1,14 @@
 window.onload = function() {
+	assets();
 	clearAll();
 	setscene(1);
 }
 
 function clearAll() {
-	for (var i=1; i<=20; i++) {
+	for (var i=1; i<=40; i++) {
 	document.querySelector("#box" + i).setAttribute('radius', '0.001');
 	}
-	for (var i=1; i<=19; i++) {
+	for (var i=1; i<=39; i++) {
 	var value = i + 1001;
 	document.querySelector("#box" + value).setAttribute('radius', '0.001');
 	}
@@ -35,4 +36,12 @@ function runback(s) {
 		setscene(s);
 	}
 	console.log("this is scene " + s);
+}
+
+function assets() {
+	var all ;
+	for(var i=1; i<=40; i++) {
+		all = all + '<img id="' + i + '" src="Finished/(' + i + ').JPG" rotation="0 -90 0">';
+	}
+	document.getElementById("assets").innerHTML = all;
 }
