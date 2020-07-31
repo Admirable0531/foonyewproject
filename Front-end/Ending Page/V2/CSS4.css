@@ -1,0 +1,36 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("https://bp1.blogger.com/_ctoEVw07BVM/SEY45FqJOSI/AAAAAAAAABA/HBP45g4DOnU/s320/%E5%AD%94%E5%AD%90%E7%9B%B8.jpg");
+
+   filter: blur(1px);
+   -webkit-filter: blur(1px);
+
+  height: 100%;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
