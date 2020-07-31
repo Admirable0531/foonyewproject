@@ -1,0 +1,47 @@
+/*Global View*/
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("https://scontent.fmkz1-1.fna.fbcdn.net/v/t1.0-9/115900796_665762927354174_935248651411596993_n.jpg?_nc_cat=102&_nc_sid=730e14&_nc_ohc=RgLNoHTNfpIAX-0iuZb&_nc_ht=scontent.fmkz1-1.fna&oh=edcca608a7df5d237f11e2ce7787cc5d&oe=5F46F939");
+
+   filter: blur(1px);
+   -webkit-filter: blur(1px);
+
+  height: 50%;
+  width: 100%;
+  transform: translate(0%, 50%);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Tablet View*/
+@media (min-width: 401px) and (max-width: 768px){
+}
+
+/*Mobile View*/
+@media (max-width: 400px){
+}
