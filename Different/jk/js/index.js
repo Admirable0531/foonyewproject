@@ -76,11 +76,13 @@ function spheres() {
 				i++;
 			}
 		}
-
-
 	document.getElementById("scenes").innerHTML = all;
 }
 
+function debug(s) {
+	clearAll();
+	setscene(s);
+}
 
 var coords = {
 	"s2": [

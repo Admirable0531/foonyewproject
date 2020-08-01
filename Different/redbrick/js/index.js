@@ -31,6 +31,7 @@ function clearAll() {
 	}
 	document.querySelector("#x6").setAttribute('radius', '0.001');
 	document.querySelector("#x8").setAttribute('radius', '0.001');
+	document.querySelector("#x12").setAttribute('radius', '0.001');
 
 	
 }
@@ -41,8 +42,12 @@ function setscene(scene) {
 	if(scene != 1) {
 		document.querySelector("#box" + (scene+1000)).setAttribute('radius', '1');
 	} else {	}
-	if (scene == 6||8) {
-	document.querySelector("#x" + scene).setAttribute('radius', '1');
+	if (scene == 6) {
+		document.querySelector("#x" + 6).setAttribute('radius', '1');
+	} else if (scene == 8){
+		document.querySelector("#x" + 8).setAttribute('radius', '1');
+	} else if (scene == 12){
+		document.querySelector("#x" + 12).setAttribute('radius', '1');
 	}
 }
 
@@ -56,7 +61,8 @@ function run(s) {
 
 function xrun(s) {
 	clearAll();
-	setscene(s+1);
+	setscene(s);
+	console.log("this is scene " + (s))
 }
 
 function runback(s) {
@@ -89,62 +95,8 @@ function spheres() {
 	document.getElementById("scenes").innerHTML = all;
 }
 
-
-var coords = {
-	"s2": [
-	"10 -5 0",
-	"-5 -5 15"
-	],
-	"s3": [
-	"5 -5 0",
-	"-6 -5 -6"
-	],
-	"s4": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s5": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s6": [
-	"0 -5 -40",
-	"0 -5 10"
-	],
-	"s7": [
-	"10 -5 0",
-	"-10 -5 25"
-	],
-	"s8": [
-	"10 -5 10",
-	"-7 -5 -7"
-	],
-	"s9": [
-	"10 -5 -5",
-	"-10 -5 0"
-	],
-	"s10": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s11": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s12": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s13": [
-	"10 -5 -5",
-	"-10 -5 0"
-	],
-	"s14": [
-	"8 -5 0",
-	"-8 -5 0"
-	],
-	"s15": [
-	"10 -5 0",
-	"-10 -5 -2"
-	]
-};
+function debug(s) {
+	clearAll();
+	setscene(s);
+	console.log("this is scene " + (s))
+}
