@@ -60,13 +60,13 @@ function spheres() {
 }
 
 
-function events(v){
-	document.getElementById("youtube" + v).style.display = "block";
+function events(open){
+	document.getElementById("youtube" + open).style.display = "block";
 	console.log("video")
 }
 
-function close(v){
-	document.getElementById("youtube" + v).style.display = "none";
+function close(close){
+	document.getElementById("youtube" + close).style.display = "none";
 	console.log("videoclose")
 }
 
