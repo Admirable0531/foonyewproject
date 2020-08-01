@@ -58,10 +58,15 @@ function spheres() {
 		}
 	document.getElementById("scenes").innerHTML = all;
 }
-var v = ""
 
 
 function events(v){
 	document.getElementById("youtube" + v).style.display = "block";
 	console.log("video")
 }
+
+function close(v){
+	document.getElementById("youtube" + v).style.display = "none";
+	console.log("videoclose")
+}
+
