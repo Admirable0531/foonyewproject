@@ -3,7 +3,7 @@
    #FONT
    ========================================================================== */
 .font-robo {
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-family: Microsoft YaHei;
 }
 
 /* ==========================================================================
@@ -29,9 +29,9 @@
 }
 
 .col-2 {
-  width: -webkit-calc((100% - 60px) / 2);
-  width: -moz-calc((100% - 60px) / 2);
-  width: calc((100% - 60px) / 2);
+  width: 100%;
+  width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -43,10 +43,6 @@
 /* ==========================================================================
    #BOX-SIZING
    ========================================================================== */
-/**
- * More sensible default box-sizing:
- * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
- */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -71,7 +67,7 @@ html {
  * A very simple reset that sits on top of Normalize.css.
  */
 body,
-h1, h2, h3, h4, h5, h6,
+h2, h3,
 blockquote, p, pre,
 dl, dd, ol, ul,
 figure,
@@ -126,13 +122,11 @@ body {
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2 {
   font-weight: 400;
 }
 
-h1 {
-  font-size: 36px;
-}
+
 
 h2 {
   font-size: 30px;
@@ -185,6 +179,22 @@ h2 {
 }
 
 /* ==========================================================================
+   #HYPERLINK
+   ========================================================================== */
+a{
+  color: black;
+  text-decoration: none;
+  font-family: Microsoft YaHei;
+}
+
+
+h3{
+  color: red;
+  text-decoration: none;
+  font-family: Microsoft YaHei;
+}
+
+/* ==========================================================================
    #BUTTON
    ========================================================================== */
 .btn {
@@ -216,54 +226,47 @@ h2 {
   background: #4dae3c;
 }
 
+
+
 /* ==========================================================================
-   #DATE PICKER
-   ========================================================================== */
-td.active {
-  background-color: #2c6ed5;
+   #CHECKBOX
+   =========================================================================*/
+   .checkbox-custom {
+  opacity: 0;
+  position: absolute;
 }
-
-input[type="date" i] {
-  padding: 14px;
+.checkbox-custom,
+.checkbox-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
 }
-
-.table-condensed td, .table-condensed th {
-  font-size: 14px;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  font-weight: 400;
+.checkbox-custom + .checkbox-custom-label:before {
+  content: '';
+  background: #fff;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
 }
-
-.daterangepicker td {
-  width: 40px;
-  height: 30px;
-}
-
-.daterangepicker {
-  border: none;
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  display: none;
-  border: 1px solid #e0e0e0;
-  margin-top: 5px;
-}
-
-.daterangepicker::after, .daterangepicker::before {
-  display: none;
-}
-
-.daterangepicker thead tr th {
-  padding: 10px 0;
-}
-
-.daterangepicker .table-condensed th select {
-  border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-size: 14px;
-  padding: 5px;
-  outline: none;
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 5px;
+  border: solid blue;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  border-radius: 0px;
+  margin: 0px 15px 5px 5px;
 }
 
 /* ==========================================================================
@@ -276,9 +279,10 @@ input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  width: 100%;
+  
+  /*width: 100;*/
   font-size: 14px;
-  font-family: inherit;
+  font-family: Microsoft YaHei;
 }
 
 /* input group 1 */
@@ -337,6 +341,10 @@ input {
   color: #808080;
 }
 
+.input--terms: {
+  padding-right: : 135px;
+}
+
 /* ==========================================================================
    #SELECT2
    ========================================================================== */
@@ -388,10 +396,10 @@ input {
   display: none;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after { /*Select的箭头*/
   font-family: "Material-Design-Iconic-Font";
   content: '\f2f9';
-  font-size: 18px;
+  font-size: 8px;
   color: #ccc;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -454,7 +462,7 @@ input {
 
 .card-2 .card-heading {
   background: url("../images/cool.png") top left/cover no-repeat;
-  width: 50%;
+  width: 40%;
   display: table-cell;
 }
 
