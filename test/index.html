@@ -6,22 +6,28 @@ But the conventional wisdom that one dog year equals seven human years is an ove
 <head>
 	<meta charset="utf-8">
 	<title>宽柔中学的趣味导览</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="/js/index.js"></script>
+	<script src="/js/coord.js"></script>
+
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<iframe id="youtube1" src="https://www.youtube.com/embed/QH2-TGUlwu4?autoplay=0" width="560" height="315" frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
 <!--<link rel="icon" type="image/png" sizes="32x32" href="https://www.foonyew.edu.my/favicon/favicon-32x32.png">-->
 </head>
 <body>
 	<div id="vr">
-		<a-scene>
+		<a-scene class="afuckingd">
 			<a-assets id="assets">
 			</a-assets>
 
 			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
 
 			<a-sky id="background"></a-sky>
-			<a-entity id="scenes">
-			</a-entity>
+			<a-entity id="scenes" visible="true"></a-entity>
+
+			<a-entity id="events" visible="true">
+				<a-box id="button_to_dance" color="yellow" position="0 -5 0" onclick="events(1)"><a-box/>
+			<a-entity/>
 		</a-scene>
 	</div>
 </body>
