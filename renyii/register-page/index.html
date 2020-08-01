@@ -30,21 +30,21 @@
                 <div class="card-heading"></div><!--左边图片-->
                 <div class="card-body"><!--整个registration Info的box-->
                     <h2 class="title">个人资料</h2>
-                    <form method="POST">
+                    <form method="POST" action=".\php\action.php">
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="姓名" name="name">
                         </div>
 
                         <div class="input-group">
-                            <input class="input--style-2" type="number" placeholder="学号" name="name">
+                            <input class="input--style-2" type="number" placeholder="学号" name="student_id">
                         </div>
 
                         <div class="input-group">
-                            <input class="input--style-2" type="number" placeholder="联络号码" name="name">
+                            <input class="input--style-2" type="number" placeholder="联络号码" name="contact">
                         </div>
 
                         <div class="input-group">
-                            <input class="input--style-2" type="email" placeholder="电邮" name="name">
+                            <input class="input--style-2" type="email" placeholder="电邮" name="email">
                         </div>
 
                         <div class="row row-space">
@@ -54,16 +54,16 @@
 
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">学校</option>
-                                            <option>宽柔一小</option>
-                                            <option>宽柔二小</option>
-                                            <option>宽柔三小</option>
-                                            <option>宽柔四小</option>
-                                            <option>宽柔五小</option>
-                                            <option>新山宽柔中学</option>
-                                            <option>宽柔中学古来分校</option>
-                                            <option>其他</option>
+                                <select name="school">
+                                    <option disabled="disabled" selected="selected" >学校</option>
+                                            <option value="fy1">宽柔一小</option>
+                                            <option value="fy2">宽柔二小</option>
+                                            <option value="fy3">宽柔三小</option>
+                                            <option value="fy4">宽柔四小</option>
+                                            <option value="fy5">宽柔五小</option>
+                                            <option value="fyjb">新山宽柔中学</option>
+                                            <option value="fyk">宽柔中学古来分校</option>
+                                            <option value="others">校外人士</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
@@ -71,12 +71,12 @@
 
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">身份</option>
-                                    <option>宽柔在籍生</option>
-                                    <option>宽柔教职员</option>
-                                    <option>宽柔校友</option>
-                                    <option>校外人士</option>
+                                <select name="type">
+                                    <option disabled="disabled" selected="selected" name="type">身份</option>
+                                    <option value="fystudent">宽柔在籍生</option>
+                                    <option value="fystaff">宽柔教职员</option>
+                                    <option value="fyalumni">宽柔校友</option>
+                                    <option value="others">校外人士</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
