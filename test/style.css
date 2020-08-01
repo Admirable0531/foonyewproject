@@ -1,0 +1,10 @@
+.afuckingd{
+	z-index: 0;
+}
+
+#youtube1
+{
+	z-index: 5;
+	position: absolute;
+	display: none;
+}
