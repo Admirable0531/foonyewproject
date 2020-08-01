@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="zh-Hans">
 
 <head>
@@ -37,6 +37,10 @@
                         </div>
 
                         <div class="input-group">
+                            <input class="input--style-2" type="number" placeholder="学号" name="name">
+                        </div>
+
+                        <div class="input-group">
                             <input class="input--style-2" type="number" placeholder="联络号码" name="contact">
                         </div>
 
@@ -48,21 +52,7 @@
                             
                             <div class="col-2">
 
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select nname="type">
-                                    <option disabled="disabled" selected="selected">身份</option>
-                                    <option value="fystudent">宽柔在籍生</option>
-                                    <option value="fystaff">宽柔教职员</option>
-                                    <option value="fyalumni">宽柔校友</option>
-                                    <option value="others">校外人士</option>                                 
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                                
-
-                        <div class="input-group">
+                                <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
                                 <select name="school">
                                     <option disabled="disabled" selected="selected">学校</option> 
@@ -79,11 +69,19 @@
                             </div>
                         </div>
 
-
                         <div class="input-group">
-                            <input class="input--style-2" type="number" placeholder="学号" name="name">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select nname="type">
+                                    <option disabled="disabled" selected="selected">身份</option>
+                                    <option value="fystudent">宽柔在籍生</option>
+                                    <option value="fystaff">宽柔教职员</option>
+                                    <option value="fyalumni">宽柔校友</option>
+                                    <option value="others">校外人士</option>                                 
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
                         </div>
-
+             
                         <div class="input-group">
                             <a href="url">访客参观 （请阅读“条款与条件”） </a>
                         </div>
@@ -94,14 +92,15 @@
                     <script src="tnc.js"></script>
 
                         
-                        <div class=tnc>
-                            <input id="checkbox" class="terms" name="terms" type="checkbox"onchange="activateButton(this)">
-                            
-                            <label for="checkbox" class="checkbox-custom-label"><h3><a href="url">我已经阅读并同意“条款与条件” </a></h3></label>
-                        </div>                        
-                            <br>
-                            <br>
-                            <input type="submit" name="submit" id="submit"> 
+                       <form method="post">
+    <div>
+        <label for="terms_and_conditions">我已经阅读并同意“条款与条件 ”</label>
+        <input type="checkbox" id="terms_and_conditions" value="1" onclick="terms_changed(this)" />
+    </div>
+    <div>
+        <button type="submit" id="submit_button" disabled>Submit</button>
+    </div>
+</form>
 
                 </div>
             </div>
