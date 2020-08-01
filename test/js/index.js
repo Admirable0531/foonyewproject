@@ -62,11 +62,11 @@ function spheres() {
 
 function events(open){
 	document.getElementById("youtube" + open).style.display = "block";
-	console.log("video")
+	console.log("video");
 }
 
-function close(close){
-	document.getElementById("youtube" + close).style.display = "none";
-	console.log("videoclose")
+function another(closed){
+	console.log("videoclosed");
+	document.getElementById("youtube" + closed).style.display = "none";
 }
 
