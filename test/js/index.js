@@ -65,7 +65,7 @@ function events(open){
 	console.log("video")
 }
 
-function close(close){
+function another(close){
 	document.getElementById("youtube" + close).style.display = "none";
 	console.log("videoclose")
 }
