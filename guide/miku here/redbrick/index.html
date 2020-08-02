@@ -1,0 +1,86 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>宽柔中学的趣味导览</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="../games/flappyball/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/popup sub css.css">
+	<link rel="stylesheet" type="text/css" href="css/popup main css.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/coord.js"></script>
+	<script defer src="../games/flappyball/popup.js"></script>
+	<script defer src="../games/flappyball/sketch.js"></script>
+	<script src="../js/global.js"></script>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+</head>
+<body>
+	<button id="flappy" style="z-index: 10; position: relative;display: none;" data-modal-target="#modal">Play Game</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">Flappy Ball</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div style="z-index: 10; position: relative;" class="modal-body" id="game-content-flappy">
+			<script src="../games/flappyball/bird.js"></script>
+			<script src="../games/flappyball/pipe.js"></script>
+			<script src="../games/flappyball/floor.js"></script>
+		</div>
+	</div>
+	<button id="ball" style="z-index: 10; position: relative;" data-modal-target="#modal">Play ball</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">BasketBall</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div style="z-index: 10; position: relative;" class="modal-body" id="game-content-basket">
+			<script src="../games/basketball/sketch.js"></script>
+		</div>
+	</div>
+	<button type="button" class="button btn-info" data-toggle="collapse" data-target="#demo"><span>详细介绍 </span></button>
+	<div id="demo" class="collapse" style="z-index: 30;">
+		<div class="youtube">
+			<iframe src="https://www.youtube.com/embed/lm0cTOQpOf8" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+		</div>
+	</div>
+	<div id="overlay"></div>
+	<div id="vr">
+		<a-scene>
+			<a-assets id="assets">
+			</a-assets>
+
+			<a-assets>
+				<img id="1" src="pictures/(1).JPG" rotation="0 -90 0">
+				<img id="2" src="pictures/(2).JPG" rotation="0 -90 0">
+				<img id="3" src="pictures/(3).JPG" rotation="0 -90 0">
+				<img id="6" src="pictures/(6).JPG" rotation="0 -90 0">
+				<img id="7" src="pictures/(7).JPG" rotation="0 -90 0">
+			</a-assets>
+
+			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
+
+			<a-sky id="abackground"></a-sky>
+			<a-entity id="scenes">
+			</a-entity>
+			<a-entity id="scene">
+				<a-entity class="scene6"><a-sphere id="xx6" color="green" onclick="setplace(1); location.href = '../jk/index.html';" position="0 -5 -40" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene6"><a-sphere id="x6" color="green" onclick="setplace(33); location.href = '../jk/index.html';" position="40 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene7"><a-sphere id="x7" color="green" onclick="setplace(1); location.href = '../jk/index.html';" position="0 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene8"><a-sphere id="x8" color="green" onclick="xrun(12);" position="20 -5 -30" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene12"><a-sphere id="x12" color="green" onclick="xrun(8);" position="25 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene15"><a-sphere id="x15" color="green" onclick="location.href = '../daqiao/index.html';" position="0 -5 -0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+			</a-entity>
+		</a-scene>
+	</div>
+</body>
+</html>

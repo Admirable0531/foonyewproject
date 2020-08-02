@@ -1,0 +1,116 @@
+.a-fuckingd 
+{
+    z-index: 0;
+  
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #4da6ff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2vw;
+    padding: 1.2%;
+    width: 15vw;
+    bottom: 30px;
+    left: 0.5%;
+    cursor: pointer;
+    margin: 5px;
+    z-index: 5;
+    position: absolute;
+  }
+
+  .button:focus {
+    outline: none;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: 0s;
+    
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+    .button {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+  
+  /*--- Extra Bootstrap Column Padding --*/
+  /*[class*="col-"] {
+    padding: 1rem;
+    overflow:visible !important;
+  }*/
+  
+  /*--- Bootstrap Mobile Gutter Fix --*/
+  .row, .container-fluid {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+  }
+
+  iframe {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
