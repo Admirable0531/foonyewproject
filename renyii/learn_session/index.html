@@ -3,55 +3,13 @@
 <head>
 	<title></title>
 </head>
-
-<script type="text/javascript">
-
- $("#test1").click(function(){
-       console.log($("#questionForm").serialize());
-    });
-    var typeTemp=[];typeTemp[0]=1;var i=0;
-    $("#country").change(function(){
-        var testval=$("#country").val();
-        if(i<2){
-            i++;
-            typeTemp.push(testval);
-            lastType=typeTemp.shift();
-        }else{
-            i=0;
-            typeTemp.push(testval);
-            lastType=typeTemp.shift();
-        }
-        $("#"+testval).show().siblings().hide();
-        $("#"+testval).find("input").removeAttr("disabled");
-        $("#"+lastType).find("input").attr("disabled",true)
-    });
-</script>
-
 <body>
 
-	<form id="questionForm" >
-    <select name="" id="country">
-        <option value="China">China</option>
-        <option value="Britain">Britain</option>
-        <option value="America">America</option>
-    </select>
-    <div>
-        <div id="China" class="none">
-           北京 <input type="text" name="beijing" disabled/><br>
-            上海<input type="text" name="shanghai" disabled/>
-        </div>
-        <div id="Britain" class="none">
-           伦敦 <input type="text" name="London" disabled/><br>
-           约克郡 <input type="text" name="Yorkshire" disabled/>
-        </div>
-        <div id="America" class="none">
-           纽约 <input type="text" name="NewYork" disabled/><br>
-            华盛顿<input type="text" name="DC" disabled/>
-        </div>
-    </div>
-    <button id="test" type="submit">submit</button>
-</form>
-    <button id="test1">测试</button>
+	<form method="POST" action="sessions.php">
+	    <input type="text" name="name">
+	    <input type="text" name="id">
+	    <input type="submit">
+	</form>
 
 </body>
 </html>

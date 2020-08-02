@@ -1,7 +1,6 @@
-用FINAL ！！！
-用FINAL ！！！
-用FINAL ！！！
+用Stable Release 1.0 ！！！
+用Stable Release 1.0 ！！！
+用Stable Release 1.0 ！！！
 
 
-v2-1跟v2-2是一样的
-v3是Final前一个版本
+DO NOT EDIT STABLE RELEASE 1.0
