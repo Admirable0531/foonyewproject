@@ -3,7 +3,9 @@ window.onload = function() {
 	spheres();
 	clearAll();
 	var place = Number(localStorage.getItem('place'));
+	if (place == 0) place = 1;
 	setscene(place);
+	console.log(place);
 	localStorage.setItem('place', 1);
 }
 
@@ -24,19 +26,13 @@ window.addEventListener("wheel", event => {
   });
 
 function clearAll() {
-	for (var i=1; i<=15; i++) {
+	for (var i=1; i<=29; i++) {
 		document.querySelector("#box" + i).setAttribute('radius', '0.001');
 	}
-	for (var i=1; i<=14; i++) {
+	for (var i=1; i<=28; i++) {
 		var value = i + 1001;
 		document.querySelector("#box" + value).setAttribute('radius', '0.001');
 	}
-	document.querySelector("#x6").setAttribute('radius', '0.001');
-	document.querySelector("#xx6").setAttribute('radius', '0.001');
-	document.querySelector("#x8").setAttribute('radius', '0.001');
-	document.querySelector("#x12").setAttribute('radius', '0.001');
-
-	
 }
 
 function setscene(scene) {
@@ -45,40 +41,19 @@ function setscene(scene) {
 	if(scene != 1) {
 		document.querySelector("#box" + (scene+1000)).setAttribute('radius', '1');
 	} else {	}
-	if (scene == 6) {
-		document.querySelector("#x" + 6).setAttribute('radius', '1');
-		document.querySelector("#xx" + 6).setAttribute('radius', '1');
-		document.querySelector("#box" +6).setAttribute('radius', '0.001');
-	} else if (scene == 8){
-		document.querySelector("#x" + 8).setAttribute('radius', '1');
-	} else if (scene == 12){
-		document.querySelector("#x" + 12).setAttribute('radius', '1');
-		document.querySelector("#box" + 1012).setAttribute('radius', '0.001');
-	} else if (scene == 11){
-		document.querySelector("#box" + 11).setAttribute('radius', '0.001');
-	} else if (scene == 7){
-		document.querySelector("#x" + 7).setAttribute('radius', '1');
-		document.querySelector("#box" + 1007).setAttribute('radius', '0.001');
-	}
 }
 
 function run(s) {
 	clearAll();
-	if ("#" + s == document.getElementById('background').getAttribute('src')) {
+	if ("#" + s == document.getElementById('abackground').getAttribute('src')) {
 		setscene(s+1);
 	}
 	console.log("this is scene " + (s+1))
 }
 
-function xrun(s) {
-	clearAll();
-	setscene(s);
-	console.log("this is scene " + (s))
-}
-
 function runback(s) {
 	clearAll();
-	if ("#" + (s+1) == document.getElementById('background').getAttribute('src')) {
+	if ("#" + (s+1) == document.getElementById('abackground').getAttribute('src')) {
 		setscene(s);
 	}
 	console.log("this is scene " + s);
@@ -86,14 +61,14 @@ function runback(s) {
 
 function assets() {
 	var allassets;
-	for(var i=1; i<=15; i++) {
+	for(var i=4; i<=29; i++) {
 		allassets = allassets + '<img id="' + i + '" src="pictures/(' + i + ').JPG" rotation="0 -90 0">';
 	}
 	document.getElementById("assets").innerHTML = allassets;
 }
 
 function spheres() {
-	var all = '<a-entity class="scene1"><a-sphere id="box1" color="red" onclick="run(1)" position="-5 -5 -20" radius="0.001" material="" geometry=""> </a-sphere></a-entity>';
+	var all = '<a-entity class="scene1"><a-sphere id="box1" color="red" onclick="run(1)" position="10 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>';
 		var i = 2;
 		for (var key in coords) {
 			if (coords.hasOwnProperty(key)) {
@@ -101,25 +76,22 @@ function spheres() {
 				i++;
 			}
 		}
-
-
 	document.getElementById("scenes").innerHTML = all;
 }
 
 function debug(s) {
 	clearAll();
 	setscene(s);
-<<<<<<< HEAD:Different/redbrick/js/index.js
 }
 
 var coords = {
 	"s2": [
-	"10 -5 5",
-	"-7 -5 15"
+	"10 -5 8",
+	"-5 -5 -5"
 	],
 	"s3": [
-	"5 -5 0",
-	"-6 -5 -6"
+	"5 -5 -1",
+	"-6 -5 0"
 	],
 	"s4": [
 	"10 -5 0",
@@ -130,47 +102,99 @@ var coords = {
 	"-7 -5 0"
 	],
 	"s6": [
+	"10 -5 5",
+	"-10 -5 -5"
+	],
+	"s7": [
+	"10 -5 -5",
+	"-10 -5 5"
+	],
+	"s8": [
+	"10 -5 3;",
+	"-7 -5 0"
+	],
+	"s9": [
+	"10 -5 0",
+	"-10 -5 -2"
+	],
+	"s10": [
+	"10 -5 0",
+	"-5 -5 1"
+	],
+	"s11": [
+	"10 -5 -1",
+	"-10 -5 0"
+	],
+	"s12": [
+	"22 -5 20",
+	"-10 -5 -10"
+	],
+	"s13": [
+	"-10 -5 5",
+	"10 -5 -2"
+	],
+	"s14": [
+	"-8 -5 0",
+	"8 -5 0"
+	],
+	"s15": [
+	"-10 -5 0",
+	"10 -5 -2"
+	],
+	"s16": [
+	"-10 -5 0",
+	"5 -5 0"
+	],
+	"s17": [
+	"-10 -5 -8",
+	"6 -5 4"
+	],
+	"s18": [
+	"-10 -5 -5",
+	"7 -5 5"
+	],
+	"s19": [
+	"-10 -5 0",
+	"7 -5 0"
+	],
+	"s20": [
 	"0 -5 -40",
 	"0 -5 10"
 	],
-	"s7": [
+	"s21": [
 	"10 -5 0",
+	"-10 -5 25"
+	],
+	"s22": [
+	"10 -5 10",
+	"-7 -5 -7"
+	],
+	"s23": [
+	"10 -5 -5",
 	"-10 -5 0"
 	],
-	"s8": [
-	"10 -5 25",
-	"-7 -5 -20"
+	"s24": [
+	"10 -5 0",
+	"-5 -5 1"
 	],
-	"s9": [
-	"-10 -5 -40",
-	"10 -5 40"
+	"s25": [
+	"10 -5 -1",
+	"-10 -5 0"
 	],
-	"s10": [
-	"0 -5 -40",
-	"0 -5 40"
+	"s26": [
+	"22 -5 20",
+	"-10 -5 -10"
 	],
-	"s11": [
-	"100 0 20",
-	"50 -3 0"
+	"s27": [
+	"10 -5 -5",
+	"-10 -5 0"
 	],
-	"s12": [
-	"-25 -5 0",
-	"20 -5 -100"
-	],
-	"s13": [
-	"20 0 7",
-	"-10 -5 -3"
-	],
-	"s14": [
+	"s28": [
 	"8 -5 0",
 	"-8 -5 0"
 	],
-	"s15": [
+	"s29": [
 	"10 -5 0",
 	"-10 -5 -2"
 	]
 };
-=======
-	console.log("this is scene " + (s))
-}
->>>>>>> be86dd7ba053821fe3ade673c8514ccfa6b3f4e3:guide/redbrick/js/index.js

@@ -3,6 +3,7 @@ window.onload = function() {
 	spheres();
 	clearAll();
 	var place = Number(localStorage.getItem('place'));
+	if (place == 0) place = 1;
 	setscene(place);
 	localStorage.setItem('place', 1);
 }
@@ -33,8 +34,11 @@ function clearAll() {
 	}
 	document.querySelector("#x6").setAttribute('radius', '0.001');
 	document.querySelector("#xx6").setAttribute('radius', '0.001');
+	document.querySelector("#x7").setAttribute('radius', '0.001');
 	document.querySelector("#x8").setAttribute('radius', '0.001');
 	document.querySelector("#x12").setAttribute('radius', '0.001');
+	document.querySelector("#x15").setAttribute('radius', '0.001');
+	document.getElementById("flappy").style.display = "none";
 
 	
 }
@@ -59,12 +63,17 @@ function setscene(scene) {
 	} else if (scene == 7){
 		document.querySelector("#x" + 7).setAttribute('radius', '1');
 		document.querySelector("#box" + 1007).setAttribute('radius', '0.001');
+	} else if (scene == 10){
+		document.getElementById("flappy").style.display = "block";
+	} else if (scene == 15){
+		document.querySelector("#x" + 15).setAttribute('radius', '1');
+		document.querySelector("#box" + 15).setAttribute('radius', '0.001');
 	}
 }
 
 function run(s) {
 	clearAll();
-	if ("#" + s == document.getElementById('background').getAttribute('src')) {
+	if ("#" + s == document.getElementById('abackground').getAttribute('src')) {
 		setscene(s+1);
 	}
 	console.log("this is scene " + (s+1))
@@ -78,7 +87,7 @@ function xrun(s) {
 
 function runback(s) {
 	clearAll();
-	if ("#" + (s+1) == document.getElementById('background').getAttribute('src')) {
+	if ("#" + (s+1) == document.getElementById('abackground').getAttribute('src')) {
 		setscene(s);
 	}
 	console.log("this is scene " + s);
@@ -86,7 +95,7 @@ function runback(s) {
 
 function assets() {
 	var allassets;
-	for(var i=1; i<=15; i++) {
+	for(var i=3; i<=15; i++) {
 		allassets = allassets + '<img id="' + i + '" src="pictures/(' + i + ').JPG" rotation="0 -90 0">';
 	}
 	document.getElementById("assets").innerHTML = allassets;
@@ -109,68 +118,5 @@ function spheres() {
 function debug(s) {
 	clearAll();
 	setscene(s);
-<<<<<<< HEAD:Different/redbrick/js/index.js
-}
-
-var coords = {
-	"s2": [
-	"10 -5 5",
-	"-7 -5 15"
-	],
-	"s3": [
-	"5 -5 0",
-	"-6 -5 -6"
-	],
-	"s4": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s5": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s6": [
-	"0 -5 -40",
-	"0 -5 10"
-	],
-	"s7": [
-	"10 -5 0",
-	"-10 -5 0"
-	],
-	"s8": [
-	"10 -5 25",
-	"-7 -5 -20"
-	],
-	"s9": [
-	"-10 -5 -40",
-	"10 -5 40"
-	],
-	"s10": [
-	"0 -5 -40",
-	"0 -5 40"
-	],
-	"s11": [
-	"100 0 20",
-	"50 -3 0"
-	],
-	"s12": [
-	"-25 -5 0",
-	"20 -5 -100"
-	],
-	"s13": [
-	"20 0 7",
-	"-10 -5 -3"
-	],
-	"s14": [
-	"8 -5 0",
-	"-8 -5 0"
-	],
-	"s15": [
-	"10 -5 0",
-	"-10 -5 -2"
-	]
-};
-=======
 	console.log("this is scene " + (s))
 }
->>>>>>> be86dd7ba053821fe3ade673c8514ccfa6b3f4e3:guide/redbrick/js/index.js
