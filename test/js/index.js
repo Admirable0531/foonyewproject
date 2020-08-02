@@ -65,8 +65,14 @@ function events(open){
 	console.log("video");
 }
 
+<<<<<<< HEAD
+function another(close){
+	document.getElementById("youtube" + close).style.display = "none";
+	console.log("videoclose")
+=======
 function another(closed){
 	console.log("videoclosed");
 	document.getElementById("youtube" + closed).style.display = "none";
+>>>>>>> b1ea697747a8ab66403bb86d7a066583eef89faf
 }
 
