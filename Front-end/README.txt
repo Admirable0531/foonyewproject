@@ -22,7 +22,7 @@ Share function
 Compress Images
 
 Countdown Timer 
-About this page (done)
+About us (done)
 Link to Facebook Page (done)
 Link to foonyew.edu.my (done)
 
@@ -32,7 +32,6 @@ Credit
 Contact us 
 
 WIP
-infomation page (done)
-matching game (done) 
+Infomation Page (done)
+Matching Game (done) 
 Credit Page (done)
-
