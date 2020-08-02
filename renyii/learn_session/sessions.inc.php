@@ -38,7 +38,7 @@ function read_session($sid)
 function write_session($sid, $data)
 {
     global $sdbc;
-    $sql = sprintf("INSERT INTO sessions(id,data,last_accessed) VALUES('%s','%s','%s')", mysqli_real_escape_string($sdbc, $sid), mysqli_real_escape_string($sdbc, $data), date("YYYY-MM-DD HH:MM:SS", time()));
+    $sql = sprintf("INSERT INTO sessions(id,data,last_accessed) VALUES('%s','%s','%s')", mysqli_real_escape_string($sdbc, $sid), mysqli_real_escape_string($sdbc, $data), date("Y-m-d H:i:s", time()));
     $res = mysqli_query($sdbc, $sql);
     if (!$res) {
         return false;
