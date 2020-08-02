@@ -61,8 +61,8 @@ function runback(s) {
 
 function assets() {
 	var allassets;
-	for(var i=1; i<=40; i++) {
-		allassets = allassets + '<img id="' + (i+3) + '" src="pictures/1/(' + i + ').JPG" rotation="0 -90 0">';
+	for(var i=1; i<=43; i++) {
+		allassets = allassets + '<img id="' + i + '" src="pictures/(' + i + ').JPG" rotation="0 -90 0">';
 	}
 	document.getElementById("assets").innerHTML = allassets;
 }
