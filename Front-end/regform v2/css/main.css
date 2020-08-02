@@ -40,6 +40,7 @@
   }
 }
 
+
 /* ==========================================================================
    #BOX-SIZING
    ========================================================================== */
@@ -225,12 +226,7 @@ h3{
 .btn--blue {
   background: #66a6ff;
 }
-
-
-
-
-
-
+  
 
 /* ==========================================================================
    #FORM
@@ -423,25 +419,27 @@ input {
 }
 
 .card-2 .card-heading {
-  background: url("") top left/cover no-repeat;
-  width: 40%;
+  background: url("../Images/Fnal.png") top left/cover no-repeat;
+  width: 55%;
   display: table-cell;
 }
 
 .card-2 .card-body {
   display: table-cell;
-  padding: 80px 90px;
+  padding: 80px 70px;
   padding-bottom: 88px;
 }
 
-@media (max-width: 767px) {
+
+/*
+@media (max-width: 910px) {
   .card-2 {
     display: block;
   }
   .card-2 .card-heading {
     width: 100%;
     display: block;
-    padding-top: 300px;
+    padding-top: 950px;
     background-position: left center;
   }
   .card-2 .card-body {
@@ -449,3 +447,29 @@ input {
     padding: 60px 50px;
   }
 }
+
+*/
+@media (max-width: 550px) {
+  .card-2 {
+    display: block;
+  }
+  .card-2 .card-heading {
+    padding: 0;
+    display: block;
+    padding-top: 950px;
+    width: 330px;
+    background-position: center;
+    margin: 0 auto;
+   
+  }
+  .card-2 .card-body {
+    display: block;
+    padding: 50px 50px;
+  }
+
+
+}
+
+
+
+
