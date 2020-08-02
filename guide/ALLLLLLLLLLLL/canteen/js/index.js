@@ -1,3 +1,8 @@
+function setplace(p) {
+	localStorage.setItem('place', p);
+	console.log(localStorage.getItem('place'));
+}
+
 window.onload = function() {
 	assets();
 	spheres();
@@ -29,10 +34,14 @@ function clearAll() {
 	for (var i=1; i<=55; i++) {
 		document.querySelector("#box" + i).setAttribute('radius', '0.001');
 	}
-	for (var i=1; i<=55; i++) {
+	for (var i=1; i<=54; i++) {
 		var value = i + 1001;
 		document.querySelector("#box" + value).setAttribute('radius', '0.001');
 	}
+	document.querySelector("#x4").setAttribute('radius', '0.001');
+	document.querySelector("#x6").setAttribute('radius', '0.001');
+	document.querySelector("#x5").setAttribute('radius', '0.001');
+	document.querySelector("#x18").setAttribute('radius', '0.001');
 }
 
 function setscene(scene) {
@@ -41,6 +50,18 @@ function setscene(scene) {
 	if(scene != 1) {
 		document.querySelector("#box" + (scene+1000)).setAttribute('radius', '1');
 	} else {	}
+	if (scene == 4){
+		document.querySelector("#x" + 4).setAttribute('radius', '1');
+	}
+	if (scene == 6){
+		document.querySelector("#x" + 6).setAttribute('radius', '1');
+	}
+	if (scene == 5){
+		document.querySelector("#x" + 5).setAttribute('radius', '1');
+	}
+	if (scene == 18){
+		document.querySelector("#x" + 18).setAttribute('radius', '1');
+	}
 }
 
 function run(s) {
@@ -49,6 +70,12 @@ function run(s) {
 		setscene(s+1);
 	}
 	console.log("this is scene " + (s+1))
+}
+
+function xrun(s) {
+	clearAll();
+	setscene(s);
+	console.log("this is scene " + (s))
 }
 
 function runback(s) {
@@ -77,7 +104,7 @@ function assets() {
 }
 
 function spheres() {
-	var all = '<a-entity class="scene1"><a-sphere id="box1" color="red" onclick="run(1)" position="10 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>';
+	var all = '<a-entity class="scene1"><a-sphere id="box1" color="red" onclick="run(1)" position="-10 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>';
 		var i = 2;
 		for (var key in coords) {
 			if (coords.hasOwnProperty(key)) {
@@ -92,222 +119,3 @@ function debug(s) {
 	clearAll();
 	setscene(s);
 }
-
-var coords = {
-	"s2": [
-	"10 -5 8",
-	"-5 -5 -5"
-	],
-	"s3": [
-	"5 -5 -1",
-	"-6 -5 0"
-	],
-	"s4": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s5": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s6": [
-	"10 -5 5",
-	"-10 -5 -5"
-	],
-	"s7": [
-	"10 -5 -5",
-	"-10 -5 5"
-	],
-	"s8": [
-	"10 -5 3;",
-	"-7 -5 0"
-	],
-	"s9": [
-	"10 -5 0",
-	"-10 -5 -2"
-	],
-	"s10": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s11": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s12": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s13": [
-	"-10 -5 5",
-	"10 -5 -2"
-	],
-	"s14": [
-	"-8 -5 0",
-	"8 -5 0"
-	],
-	"s15": [
-	"-10 -5 0",
-	"10 -5 -2"
-	],
-	"s16": [
-	"-10 -5 0",
-	"5 -5 0"
-	],
-	"s17": [
-	"-10 -5 -8",
-	"6 -5 4"
-	],
-	"s18": [
-	"-10 -5 -5",
-	"7 -5 5"
-	],
-	"s19": [
-	"-10 -5 0",
-	"7 -5 0"
-	],
-	"s20": [
-	"0 -5 -40",
-	"0 -5 10"
-	],
-	"s21": [
-	"10 -5 0",
-	"-10 -5 25"
-	],
-	"s22": [
-	"10 -5 10",
-	"-7 -5 -7"
-	],
-	"s23": [
-	"10 -5 -5",
-	"-10 -5 0"
-	],
-	"s24": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s25": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s26": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s27": [
-	"10 -5 -5",
-	"-10 -5 0"
-	],
-	"s28": [
-	"8 -5 0",
-	"-8 -5 0"
-	],
-	"s29": [
-	"10 -5 0",
-	"-10 -5 -2"
-	],
-	"s30": [
-	"10 -5 8",
-	"-5 -5 -5"
-	],
-	"s31": [
-	"5 -5 -1",
-	"-6 -5 0"
-	],
-	"s32": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s33": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s34": [
-	"10 -5 5",
-	"-10 -5 -5"
-	],
-	"s35": [
-	"10 -5 -5",
-	"-10 -5 5"
-	],
-	"s36": [
-	"10 -5 3;",
-	"-7 -5 0"
-	],
-	"s37": [
-	"10 -5 0",
-	"-10 -5 -2"
-	],
-	"s38": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s39": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s40": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s41": [
-	"-10 -5 5",
-	"10 -5 -2"
-	],
-	"s42": [
-	"-8 -5 0",
-	"8 -5 0"
-	],
-	"s43": [
-	"-10 -5 0",
-	"10 -5 -2"
-	],
-	"s44": [
-	"-10 -5 0",
-	"5 -5 0"
-	],
-	"s45": [
-	"-10 -5 -8",
-	"6 -5 4"
-	],
-	"s46": [
-	"-10 -5 -5",
-	"7 -5 5"
-	],
-	"s47": [
-	"-10 -5 0",
-	"7 -5 0"
-	],
-	"s48": [
-	"0 -5 -40",
-	"0 -5 10"
-	],
-	"s49": [
-	"10 -5 0",
-	"-10 -5 25"
-	],
-	"s50": [
-	"10 -5 10",
-	"-7 -5 -7"
-	],
-	"s51": [
-	"10 -5 -5",
-	"-10 -5 0"
-	],
-	"s52": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s53": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s54": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s55": [
-	"10 -5 -5",
-	"-10 -5 0"
-	]
-};
