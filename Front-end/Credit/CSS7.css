@@ -1,0 +1,110 @@
+@font-face {
+font-family: Abadi MT Condensed
+}
+
+body
+{
+    overflow: hidden;
+}
+
+#bg { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("pattern.png");
+	height: 650%;
+}
+
+.outer-wrapper {
+position: relative;
+height: 200px;
+}
+
+.wrapper {
+position: relative;
+width:10000px;
+margin:100px auto;
+z-index: 1;
+background-image: url("Picture1.png");
+padding: 50px;
+box-shadow: 0 10px 30px rgba(0,0,0,.1);
+top: 100%;
+width: 50%;
+font-family: Abadi MT Condensed;
+text-align: left;
+color: #fff;
+animation: 45s credits linear infinite;
+animation-delay: 1.5s;
+}
+
+.video_title {
+margin-bottom: 50px;
+font-size: 80px;
+text-shadow: 2px 2px #878787;
+letter-spacing: 0px;
+text-outline: #304345;
+text-decoration: none;
+}
+
+
+.job_title {
+margin-bottom: 5px;
+}
+
+.person_name {
+text-align: center;
+margin-bottom: 20px;
+}
+
+p1
+{
+	background-color: white;
+	text-align: center;
+	font-size: 60px;
+	color: darkslateblue;
+	font-weight: 1200;
+}
+
+p2
+{
+	background-color: lightpink;
+	text-align: center;
+	font-size: 30px;
+	color: darkblue;
+	font-weight: 600; 
+}
+
+p3
+{
+	background-color: lightgoldenrodyellow;
+	text-align: center;
+	font-size: 56px;
+	color: darkgoldenrod;
+	font-weight: 1200;
+}
+
+.job_title a
+{
+    position: relative;
+	display: inline-block;
+	padding: 10px 25px;
+	background: #ff0562;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 25px;
+	border-radius: 25px;
+	border-bottom: 4px solid #d00d56;
+}
+
+@keyframes credits { 
+0% { 
+top: 100%; } 
+100% { 
+top: -1300%; 
+}
+}
