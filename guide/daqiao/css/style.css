@@ -1,0 +1,11 @@
+a-triangle {
+	rotation: -90 0 0;
+}
+
+.forward {
+	color: red;
+}
+
+.backward {
+	color: blue;
+}
