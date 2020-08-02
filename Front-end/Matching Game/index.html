@@ -1,157 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
+	<meta charset="utf-8">	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+	<link rel="manifest" href="../Favicon/site.webmanifest">
+	<link rel="mask-icon" href="../Favicon/safari-pinned-tab.svg" color="#000000">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../Favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	
 	<link rel="stylesheet" href="style.css">
-	<title>Matching Game</title>
+
+	<script src="matching.js"></script>
+
+	<title>翻牌</title>
 </head>
 
 <body>
 
-	<h1 class="title">Matching Game</h1>
+	<h1 class="title">翻盘翻不过我的下去</h1>
+
+	<div class="overlay-text visivle">
+		点击开始
+	</div>
+
+	<div id="game-over-text" class="overlay-text">
+		真的烂
+		<span class="overlay-text-small">重新开始</span>
+	</div>
+
+	<div id="victory-text" class="overlay-text">
+   		 就这？
+    	<span class="overlay-text-small">重新开始</span>
+  	</div>
+
 	<div class="game-container">
 		<div class="game-info-container">
+			
 			<div class="game-info">
-				Time <span id="time-remaining">100</span>
+				时间 <span id="time-remaining">100</span>
 			</div>
+
 		<div class="game-info">
-			Flips <span id="flips">0</span>
+			翻牌数 <span id="flips">0</span>
 			</div>
 		</div>
-	
-	<div class="card">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
 	</div>
 
-<div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div><div class="card ">
-		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
-		</div>
-
-		<div class="card-front card-face">
-			<img class="star" src="star.png">
-		</div>
-	</div>
 	<div class="card ">
 		<div class="card-back card-face">
-			<img class="dab" src="coolpost.png">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
 		</div>
 
 		<div class="card-front card-face">
-			<img class="star" src="star.png">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+<!--
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
 		</div>
 	</div>
 
 
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+
+	<div class="card ">
+		<div class="card-back card-face">
+			<img class="dab" src="coolpost.png" alt="flipcard1">
+		</div>
+
+		<div class="card-front card-face">
+			<img class="card-value" src="star.png" alt="flipcard2">
+		</div>
+	</div>
+-->
+ <!--Credit to WebDevSimplified-->
 
 </body>
 </html>
