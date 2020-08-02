@@ -26,10 +26,10 @@ window.addEventListener("wheel", event => {
   });
 
 function clearAll() {
-	for (var i=1; i<=29; i++) {
+	for (var i=1; i<=55; i++) {
 		document.querySelector("#box" + i).setAttribute('radius', '0.001');
 	}
-	for (var i=1; i<=28; i++) {
+	for (var i=1; i<=55; i++) {
 		var value = i + 1001;
 		document.querySelector("#box" + value).setAttribute('radius', '0.001');
 	}
@@ -61,8 +61,17 @@ function runback(s) {
 
 function assets() {
 	var allassets;
-	for(var i=4; i<=29; i++) {
-		allassets = allassets + '<img id="' + i + '" src="pictures/(' + i + ').JPG" rotation="0 -90 0">';
+	for(var i=1; i<=14; i++) {
+		allassets = allassets + '<img id="' + (i+3) + '" src="pictures/1/(' + i + ').JPG" rotation="0 -90 0">';
+	}
+	for(var i=1; i<=15; i++) {
+		allassets = allassets + '<img id="' + (i+17) + '" src="pictures/2/(' + i + ').JPG" rotation="0 -90 0">';
+	}
+	for(var i=1; i<=12; i++) {
+		allassets = allassets + '<img id="' + (i+32) + '" src="pictures/3/(' + i + ').JPG" rotation="0 -90 0">';
+	}
+	for(var i=1; i<=11; i++) {
+		allassets = allassets + '<img id="' + (i+44) + '" src="pictures/4/(' + i + ').JPG" rotation="0 -90 0">';
 	}
 	document.getElementById("assets").innerHTML = allassets;
 }
@@ -196,5 +205,109 @@ var coords = {
 	"s29": [
 	"10 -5 0",
 	"-10 -5 -2"
+	],
+	"s30": [
+	"10 -5 8",
+	"-5 -5 -5"
+	],
+	"s31": [
+	"5 -5 -1",
+	"-6 -5 0"
+	],
+	"s32": [
+	"10 -5 0",
+	"-7 -5 0"
+	],
+	"s33": [
+	"10 -5 0",
+	"-7 -5 0"
+	],
+	"s34": [
+	"10 -5 5",
+	"-10 -5 -5"
+	],
+	"s35": [
+	"10 -5 -5",
+	"-10 -5 5"
+	],
+	"s36": [
+	"10 -5 3;",
+	"-7 -5 0"
+	],
+	"s37": [
+	"10 -5 0",
+	"-10 -5 -2"
+	],
+	"s38": [
+	"10 -5 0",
+	"-5 -5 1"
+	],
+	"s39": [
+	"10 -5 -1",
+	"-10 -5 0"
+	],
+	"s40": [
+	"22 -5 20",
+	"-10 -5 -10"
+	],
+	"s41": [
+	"-10 -5 5",
+	"10 -5 -2"
+	],
+	"s42": [
+	"-8 -5 0",
+	"8 -5 0"
+	],
+	"s43": [
+	"-10 -5 0",
+	"10 -5 -2"
+	],
+	"s44": [
+	"-10 -5 0",
+	"5 -5 0"
+	],
+	"s45": [
+	"-10 -5 -8",
+	"6 -5 4"
+	],
+	"s46": [
+	"-10 -5 -5",
+	"7 -5 5"
+	],
+	"s47": [
+	"-10 -5 0",
+	"7 -5 0"
+	],
+	"s48": [
+	"0 -5 -40",
+	"0 -5 10"
+	],
+	"s49": [
+	"10 -5 0",
+	"-10 -5 25"
+	],
+	"s50": [
+	"10 -5 10",
+	"-7 -5 -7"
+	],
+	"s51": [
+	"10 -5 -5",
+	"-10 -5 0"
+	],
+	"s52": [
+	"10 -5 0",
+	"-5 -5 1"
+	],
+	"s53": [
+	"10 -5 -1",
+	"-10 -5 0"
+	],
+	"s54": [
+	"22 -5 20",
+	"-10 -5 -10"
+	],
+	"s55": [
+	"10 -5 -5",
+	"-10 -5 0"
 	]
 };
