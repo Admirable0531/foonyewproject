@@ -137,7 +137,9 @@ h2 {
    #BACKGROUND
    ========================================================================== */
 .bg {
-  background: #3AAFA9;
+  animation: move 30s ease infinite;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+
 }
 
 /* ==========================================================================
@@ -182,7 +184,7 @@ h2 {
    #HYPERLINK
    ========================================================================== */
 a{
-  color: black;
+  color: blue;
   font-size: 16px;
   text-decoration: none;
   font-family: Microsoft YaHei;
@@ -196,9 +198,9 @@ h3{
 }
 
 /* ==========================================================================
-   #BUTTON
+   #BUTTON 
    ========================================================================== */
-.submit_button {
+.btn {
   line-height: 40px;
   display: inline-block;
   padding: 0 25px;
@@ -211,21 +213,21 @@ h3{
   transition: all 0.4s ease;
   font-size: 14px;
   font-weight: 700;
+  width: 100%;
 }
 
-.submit_button {
+.btn--radius {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
-.submit_button {
-  background: #57b846;
+.btn--blue {
+  background: #66a6ff;
 }
 
-.submit_button:hover {
-  background: #4dae3c;
-}
+
+
 
 
 
@@ -303,11 +305,11 @@ input {
 }
 
 .input--terms: {
-  padding-right: : 135px;
+  padding-right: : 5px;
 }
 
 /* ==========================================================================
-   #SELECT2
+   #SELECT2 
    ========================================================================== */
 .select--no-search .select2-search {
   display: none !important;
@@ -333,7 +335,7 @@ input {
   font-weight: 500;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow { /*Select的箭头*/
   height: 34px;
   right: 4px;
   display: -webkit-box;
@@ -357,10 +359,10 @@ input {
   display: none;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after { /*Select的箭头*/
-  font-family: Microsoft YaHei;
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after { 
+  font-family: "Material-Design-Iconic-Font"; 
   content: '\f2f9';
-  font-size: 8px;
+  font-size: 18px;
   color: #ccc;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -390,11 +392,10 @@ input {
 }
 
 /* ==========================================================================
-   #TITLE
+   #TITLE 输入资料以参加抽奖
    ========================================================================== */
 
 .title {
-  text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 37px;
 }
@@ -422,7 +423,7 @@ input {
 }
 
 .card-2 .card-heading {
-  background: url("../images/cool.png") top left/cover no-repeat;
+  background: url("") top left/cover no-repeat;
   width: 40%;
   display: table-cell;
 }
