@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>宽柔中学的趣味导览</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="/js/index.js"></script>
+	<script src="/js/coord.js"></script>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+	<div id="vr">
+		<a-scene>
+			<a-assets id="assets">
+			</a-assets>
+
+			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
+
+			<a-sky id="background"></a-sky>
+			<a-entity id="scenes">
+			</a-entity>
+			<a-entity id="scene">
+				<a-entity class="scene6"><a-sphere id="x6" color="green" onclick="location.href = '/Different/jk/jk.html';" position="0 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene8"><a-sphere id="x8" color="green" onclick="xrun(12);" position="20 -5 -30" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene12"><a-sphere id="x12" color="green" onclick="xrun(8);" position="0 -5 -0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene15"><a-sphere id="x15" color="green" onclick="location.href = '/Different/jk/cc.html';" position="0 -5 -0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+			</a-entity>
+		</a-scene>
+	</div>
+</body>
+</html>

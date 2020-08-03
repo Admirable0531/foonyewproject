@@ -10,6 +10,7 @@ window.onload = function() {
 	var place = Number(localStorage.getItem('place'));
 	if (place == 0) place = 1;
 	setscene(place);
+	console.log(place);
 	localStorage.setItem('place', 1);
 }
 
@@ -30,18 +31,17 @@ window.addEventListener("wheel", event => {
   });
 
 function clearAll() {
-	for (var i=1; i<=64; i++) {
+	for (var i=1; i<=55; i++) {
 		document.querySelector("#box" + i).setAttribute('radius', '0.001');
 	}
-	for (var i=1; i<=63; i++) {
+	for (var i=1; i<=54; i++) {
 		var value = i + 1001;
 		document.querySelector("#box" + value).setAttribute('radius', '0.001');
 	}
 	document.querySelector("#x4").setAttribute('radius', '0.001');
 	document.querySelector("#x6").setAttribute('radius', '0.001');
 	document.querySelector("#x5").setAttribute('radius', '0.001');
-	document.querySelector("#x7").setAttribute('radius', '0.001');
-	document.querySelector("#x9").setAttribute('radius', '0.001');
+	document.querySelector("#x18").setAttribute('radius', '0.001');
 }
 
 function setscene(scene) {
@@ -59,11 +59,8 @@ function setscene(scene) {
 	if (scene == 5){
 		document.querySelector("#x" + 5).setAttribute('radius', '1');
 	}
-	if (scene == 7){
-		document.querySelector("#x" + 7).setAttribute('radius', '1');
-	}
-	if (scene == 9){
-		document.querySelector("#x" + 9).setAttribute('radius', '1');
+	if (scene == 18){
+		document.querySelector("#x" + 18).setAttribute('radius', '1');
 	}
 }
 
@@ -91,20 +88,17 @@ function runback(s) {
 
 function assets() {
 	var allassets;
-	for(var i=1; i<=9; i++) {
-		allassets = allassets + '<img id="' + i + '" src="pictures/(' + i + ').JPG" rotation="0 -90 0">';
+	for(var i=1; i<=14; i++) {
+		allassets = allassets + '<img id="' + (i+3) + '" src="pictures/1/(' + i + ').JPG" rotation="0 -90 0">';
 	}
-	for(var i=1; i<=10; i++) {
-		allassets = allassets + '<img id="' + (i+9) + '" src="pictures/1/(' + i + ').JPG" rotation="0 -90 0">';
+	for(var i=1; i<=15; i++) {
+		allassets = allassets + '<img id="' + (i+17) + '" src="pictures/2/(' + i + ').JPG" rotation="0 -90 0">';
 	}
-	for(var i=1; i<=22; i++) {
-		allassets = allassets + '<img id="' + (i+19) + '" src="pictures/2/(' + i + ').JPG" rotation="0 -90 0">';
+	for(var i=1; i<=12; i++) {
+		allassets = allassets + '<img id="' + (i+32) + '" src="pictures/3/(' + i + ').JPG" rotation="0 -90 0">';
 	}
-	for(var i=1; i<=5; i++) {
-		allassets = allassets + '<img id="' + (i+41) + '" src="pictures/3/(' + i + ').JPG" rotation="0 -90 0">';
-	}
-	for(var i=1; i<=18; i++) {
-		allassets = allassets + '<img id="' + (i+46) + '" src="pictures/4/(' + i + ').JPG" rotation="0 -90 0">';
+	for(var i=1; i<=11; i++) {
+		allassets = allassets + '<img id="' + (i+44) + '" src="pictures/4/(' + i + ').JPG" rotation="0 -90 0">';
 	}
 	document.getElementById("assets").innerHTML = allassets;
 }
@@ -118,32 +112,10 @@ function spheres() {
 				i++;
 			}
 		}
-
-
 	document.getElementById("scenes").innerHTML = all;
 }
 
 function debug(s) {
 	clearAll();
 	setscene(s);
-	console.log("this is scene " + (s))
-}
-
-function toggle() {
-  var x = document.getElementById("youtube");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function plz() {
-    var audio = document.getElementById('field');
-    if (audio.paused) {
-        audio.play();
-    }else{
-        audio.pause();
-        audio.currentTime = 0
-    }
 }

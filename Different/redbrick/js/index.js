@@ -1,16 +1,8 @@
-function setplace(p) {
-	localStorage.setItem('place', p);
-	console.log(localStorage.getItem('place'));
-}
-
 window.onload = function() {
 	assets();
 	spheres();
 	clearAll();
-	var place = Number(localStorage.getItem('place'));
-	if (place == 0) place = 1;
-	setscene(place);
-	localStorage.setItem('place', 1);
+	setscene(1);
 }
 
 window.addEventListener("wheel", event => {
@@ -30,18 +22,18 @@ window.addEventListener("wheel", event => {
   });
 
 function clearAll() {
-	for (var i=1; i<=64; i++) {
+	for (var i=1; i<=15; i++) {
 		document.querySelector("#box" + i).setAttribute('radius', '0.001');
 	}
-	for (var i=1; i<=63; i++) {
+	for (var i=1; i<=14; i++) {
 		var value = i + 1001;
 		document.querySelector("#box" + value).setAttribute('radius', '0.001');
 	}
-	document.querySelector("#x4").setAttribute('radius', '0.001');
 	document.querySelector("#x6").setAttribute('radius', '0.001');
-	document.querySelector("#x5").setAttribute('radius', '0.001');
-	document.querySelector("#x7").setAttribute('radius', '0.001');
-	document.querySelector("#x9").setAttribute('radius', '0.001');
+	document.querySelector("#x8").setAttribute('radius', '0.001');
+	document.querySelector("#x12").setAttribute('radius', '0.001');
+
+	
 }
 
 function setscene(scene) {
@@ -50,26 +42,18 @@ function setscene(scene) {
 	if(scene != 1) {
 		document.querySelector("#box" + (scene+1000)).setAttribute('radius', '1');
 	} else {	}
-	if (scene == 4){
-		document.querySelector("#x" + 4).setAttribute('radius', '1');
-	}
-	if (scene == 6){
+	if (scene == 6) {
 		document.querySelector("#x" + 6).setAttribute('radius', '1');
-	}
-	if (scene == 5){
-		document.querySelector("#x" + 5).setAttribute('radius', '1');
-	}
-	if (scene == 7){
-		document.querySelector("#x" + 7).setAttribute('radius', '1');
-	}
-	if (scene == 9){
-		document.querySelector("#x" + 9).setAttribute('radius', '1');
+	} else if (scene == 8){
+		document.querySelector("#x" + 8).setAttribute('radius', '1');
+	} else if (scene == 12){
+		document.querySelector("#x" + 12).setAttribute('radius', '1');
 	}
 }
 
 function run(s) {
 	clearAll();
-	if ("#" + s == document.getElementById('abackground').getAttribute('src')) {
+	if ("#" + s == document.getElementById('background').getAttribute('src')) {
 		setscene(s+1);
 	}
 	console.log("this is scene " + (s+1))
@@ -83,7 +67,7 @@ function xrun(s) {
 
 function runback(s) {
 	clearAll();
-	if ("#" + (s+1) == document.getElementById('abackground').getAttribute('src')) {
+	if ("#" + (s+1) == document.getElementById('background').getAttribute('src')) {
 		setscene(s);
 	}
 	console.log("this is scene " + s);
@@ -91,26 +75,14 @@ function runback(s) {
 
 function assets() {
 	var allassets;
-	for(var i=1; i<=9; i++) {
+	for(var i=1; i<=15; i++) {
 		allassets = allassets + '<img id="' + i + '" src="pictures/(' + i + ').JPG" rotation="0 -90 0">';
-	}
-	for(var i=1; i<=10; i++) {
-		allassets = allassets + '<img id="' + (i+9) + '" src="pictures/1/(' + i + ').JPG" rotation="0 -90 0">';
-	}
-	for(var i=1; i<=22; i++) {
-		allassets = allassets + '<img id="' + (i+19) + '" src="pictures/2/(' + i + ').JPG" rotation="0 -90 0">';
-	}
-	for(var i=1; i<=5; i++) {
-		allassets = allassets + '<img id="' + (i+41) + '" src="pictures/3/(' + i + ').JPG" rotation="0 -90 0">';
-	}
-	for(var i=1; i<=18; i++) {
-		allassets = allassets + '<img id="' + (i+46) + '" src="pictures/4/(' + i + ').JPG" rotation="0 -90 0">';
 	}
 	document.getElementById("assets").innerHTML = allassets;
 }
 
 function spheres() {
-	var all = '<a-entity class="scene1"><a-sphere id="box1" color="red" onclick="run(1)" position="-10 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>';
+	var all = '<a-entity class="scene1"><a-sphere id="box1" color="red" onclick="run(1)" position="-5 -5 -20" radius="0.001" material="" geometry=""> </a-sphere></a-entity>';
 		var i = 2;
 		for (var key in coords) {
 			if (coords.hasOwnProperty(key)) {
@@ -127,23 +99,4 @@ function debug(s) {
 	clearAll();
 	setscene(s);
 	console.log("this is scene " + (s))
-}
-
-function toggle() {
-  var x = document.getElementById("youtube");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function plz() {
-    var audio = document.getElementById('field');
-    if (audio.paused) {
-        audio.play();
-    }else{
-        audio.pause();
-        audio.currentTime = 0
-    }
 }
