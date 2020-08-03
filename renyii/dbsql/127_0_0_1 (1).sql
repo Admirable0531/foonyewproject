@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 02, 2020 at 03:47 PM
+-- Generation Time: Aug 03, 2020 at 02:56 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -32,42 +32,20 @@ USE `fyp-db`;
 
 DROP TABLE IF EXISTS `mystudents`;
 CREATE TABLE IF NOT EXISTS `mystudents` (
-  `random_id` int(50) NOT NULL,
   `student_id` varchar(50) NOT NULL,
   `name` varchar(55) NOT NULL,
   `contact` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `school` varchar(50) NOT NULL,
-  `type` varchar(50) NOT NULL,
-  PRIMARY KEY (`random_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
---
--- Database: `fyp-db1`
---
-CREATE DATABASE IF NOT EXISTS `fyp-db1` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `fyp-db1`;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `mystudents`
---
-
-DROP TABLE IF EXISTS `mystudents`;
-CREATE TABLE IF NOT EXISTS `mystudents` (
-  `student_id` varchar(50) NOT NULL,
-  `name` varchar(55) NOT NULL,
-  `contact` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
   `school` varchar(50) NOT NULL,
   `type` varchar(50) NOT NULL,
   PRIMARY KEY (`student_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
 --
--- Database: `session`
+-- Dumping data for table `mystudents`
 --
-CREATE DATABASE IF NOT EXISTS `session` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `session`;
+
+INSERT INTO `mystudents` (`student_id`, `name`, `contact`, `school`, `type`) VALUES
+('213', '123', 'q21312', 'fy3', 'fystudent');
 
 -- --------------------------------------------------------
 
@@ -88,8 +66,7 @@ CREATE TABLE IF NOT EXISTS `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `data`, `last_accessed`) VALUES
-('3t26trjrn4cekma7q5ugf77dfo', 'name|s:2:\"id\";id|s:8:\"name1111\";', '2020-08-01 22:55:07'),
-('s7s82qk03kesjrhlpvu80b0qh4', 'name|s:2:\"da\";id|s:2:\"da\";', '2020-08-02 00:44:06');
+('0ct7rplrnmr5vrqlovjibnk5lg', 'name|s:6:\"q21312\";id|s:3:\"213\";', '2020-08-03 05:31:52');
 --
 -- Database: `test`
 --
