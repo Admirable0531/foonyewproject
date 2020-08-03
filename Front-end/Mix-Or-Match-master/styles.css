@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   background: radial-gradient(#29323c,  #485563);
+  user-select: none;
 }
 
 .page-title {
@@ -35,8 +36,8 @@ body {
 }
 
 .game-info {
-  color: #FFBB89;
-  font-size: 4em;
+  color: #1d7fcb;
+  font-size: 3em;
 }
 
 .game-container {
@@ -109,7 +110,7 @@ body {
 }
 
 .card-front {
-  background-color: #FFBB89;
+  background-color: #1d7fcb;
   border-color: #333;
   transform: rotateY(180deg);
 }
@@ -138,7 +139,7 @@ body {
   display: flex;
   animation: overlay-grow 500ms forwards;
 }
-
+/*
 @keyframes dance {
   0%, 100% {
     transform: rotate(0)
@@ -149,7 +150,7 @@ body {
   75% {
     transform: rotate(30deg)
   }
-}
+}*/
 
 @keyframes overlay-grow {
   from {
@@ -163,6 +164,15 @@ body {
 }
 
 @media (max-width: 600px) {
+
+
+  .card {
+  position: relative;
+  height: 125px;
+  width: 75px;
+  }
+
+
   .game-container {
     grid-template-columns: repeat(2, auto)
   }
