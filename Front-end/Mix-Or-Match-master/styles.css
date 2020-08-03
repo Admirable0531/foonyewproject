@@ -132,13 +132,14 @@ body {
 }
 
 .overlay-text-small {
-  font-size: .3em;
+  font-size: 1em;
 }
 
 .overlay-text.visible {
   display: flex;
   animation: overlay-grow 500ms forwards;
 }
+
 /*
 @keyframes dance {
   0%, 100% {
@@ -165,6 +166,18 @@ body {
 
 @media (max-width: 600px) {
 
+  .overlay-text-small{
+  font-size: .03em;
+  }
+
+  .page-title {
+    font-size: 3em;
+  }
+
+  .game-info {
+    font-size: 1.5em;
+  }
+
 
   .card {
   position: relative;
@@ -174,11 +187,11 @@ body {
 
 
   .game-container {
-    grid-template-columns: repeat(2, auto)
+    grid-template-columns: repeat(4, auto)
   }
 
   .game-info-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 }
