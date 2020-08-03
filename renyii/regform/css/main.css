@@ -422,6 +422,7 @@ input {
   background: url("../Images/Fnal.png") top left/cover no-repeat;
   width: 55%;
   display: table-cell;
+  background-size: 100%;
 }
 
 .card-2 .card-body {
@@ -456,7 +457,7 @@ input {
   .card-2 .card-heading {
     padding: 0;
     display: block;
-    padding-top: 950px;
+    padding-top: 450px;
     width: 330px;
     background-position: center;
     margin: 0 auto;
