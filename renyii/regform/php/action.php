@@ -19,7 +19,7 @@ $contact = $_POST['contact'];
 $school = $_POST['school'];
 $type = $_POST['type'];
 
-$sql = "INSERT INTO mystudents (student_id,contact,name,school,type) VALUES ('$student_id','$name','$contact','$school','$type')";
+$sql = "INSERT INTO mystudents (contact,student_id,name,school,type) VALUES ('$contact','$student_id','$name','$school','$type')";
 
 //创建会话数据
 if(empty($_SESSION)){
