@@ -103,7 +103,7 @@ section:after
 	border-right: 100vh solid #fff;
 	opacity: 0.1;
 }
-div2
+.div2
 {
 	position: absolute;
 	background: #fff;
@@ -112,63 +112,63 @@ div2
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
-div2:nth-child(1)
+.div2:nth-child(1)
 {
 	left: 100px;
 	width: 150px;
 	height: 100px;
 	animation-duration: 15s;
 }
-div2:nth-child(2)
+.div2:nth-child(2)
 {
 	left: 300px;
 	width: 80px;
 	height: 60px;
 	animation-duration: 10s;
 }
-div2:nth-child(3)
+.div2:nth-child(3)
 {
 	left: 500px;
 	width: 200px;
 	height: 150px;
 	animation-duration: 25s;
 }
-div2:nth-child(4)
+.div2:nth-child(4)
 {
 	left: 20px;
 	width: 40px;
 	height: 30px;
 	animation-duration: 5s;
 }
-div2:nth-child(5)
+.div2:nth-child(5)
 {
 	right: 100px;
 	width: 90px;
 	height: 60px;
 	animation-duration: 8s;
 }
-div2:nth-child(6)
+.div2:nth-child(6)
 {
 	right: 220px;
 	width: 120px;
 	height: 90px;
 	animation-duration: 5s;
 }
-div2:nth-child(7)
+.div2:nth-child(7)
 {
 	left: 450px;
 	width: 70px;
 	height: 52.5px;
 	animation-duration: 12s;
 }
-div2:nth-child(8)
+.div2:nth-child(8)
 {
 	left: 350px;
 	width: 40px;
 	height: 30px;
 	animation-duration: 5s;
 }
-div2:before
+.div2:before
 {
 	content: '';
 	position: absolute;
@@ -179,7 +179,7 @@ div2:before
 	height: 100%;
 	background: #fff;
 }
-div2:after
+.div2:after
 {
 	content: '';
 	position: absolute;
