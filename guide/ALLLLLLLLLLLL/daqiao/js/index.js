@@ -33,6 +33,9 @@ function clearAll() {
 		var value = i + 1001;
 		document.querySelector("#box" + value).setAttribute('radius', '0.001');
 	}
+	document.querySelector("#x1").setAttribute('radius', '0.001');
+	document.querySelector("#xx1").setAttribute('radius', '0.001');
+	document.querySelector("#x3").setAttribute('radius', '0.001');
 	document.querySelector("#x12").setAttribute('radius', '0.001');
 	document.querySelector("#x15").setAttribute('radius', '0.001');
 	document.querySelector("#x21").setAttribute('radius', '0.001');
@@ -42,10 +45,33 @@ function clearAll() {
 	document.querySelector("#x32").setAttribute('radius', '0.001');
 	document.querySelector("#xx30").setAttribute('radius', '0.001');
 	document.querySelector("#x41").setAttribute('radius', '0.001');
+	document.querySelector("#x43").setAttribute('radius', '0.001');	
+	document.querySelector("#xx41").setAttribute('radius', '0.001');
 	document.querySelector("#x44").setAttribute('radius', '0.001');
 	document.querySelector("#x48").setAttribute('radius', '0.001');
 	document.querySelector("#x35").setAttribute('radius', '0.001');
 	document.querySelector("#x49").setAttribute('radius', '0.001');
+	document.querySelector("#x11").setAttribute('radius', '0.001');
+	document.querySelector("#x42").setAttribute('radius', '0.001');
+	document.querySelector("#x56").setAttribute('radius', '0.001');
+	document.querySelector("#xx56").setAttribute('radius', '0.001');
+	document.querySelector("#xx49").setAttribute('radius', '0.001');
+	document.querySelector("#x57").setAttribute('radius', '0.001');
+	document.querySelector("#x66").setAttribute('radius', '0.001');
+	document.querySelector("#xx66").setAttribute('radius', '0.001');
+	document.querySelector("#x20").setAttribute('radius', '0.001');
+	document.querySelector("#x34").setAttribute('radius', '0.001');
+	document.querySelector("#x17").setAttribute('radius', '0.001');
+	document.querySelector("#xx17").setAttribute('radius', '0.001');
+	document.querySelector("#x16").setAttribute('radius', '0.001');
+	document.querySelector("#x15").setAttribute('radius', '0.001');
+	document.querySelector("#xx21").setAttribute('radius', '0.001');
+	document.querySelector("#xx22").setAttribute('radius', '0.001');
+	document.querySelector("#xxx22").setAttribute('radius', '0.001');
+	document.querySelector("#xxxx22").setAttribute('radius', '0.001');
+	document.querySelector("#x26").setAttribute('radius', '0.001');
+	document.querySelector("#x23").setAttribute('radius', '0.001');
+	document.querySelector("#xx12").setAttribute('radius', '0.001');
 
 }
 
@@ -60,19 +86,40 @@ function setscene(scene) {
 		document.querySelector("#xx" + 15).setAttribute('radius', '1');
 	} else if (scene == 21){
 		document.querySelector("#x" + 21).setAttribute('radius', '1');
+		document.querySelector("#xx" + 21).setAttribute('radius', '1');
+		document.querySelector("#box" + 1021).setAttribute('radius', '0.001');
+		document.querySelector("#box" + 21).setAttribute('radius', '0.001');
+
 	} else if (scene == 22){
+		document.querySelector("#box" + 1022).setAttribute('radius', '0.001');
+		document.querySelector("#box" + 22).setAttribute('radius', '0.001');
 		document.querySelector("#x" + 22).setAttribute('radius', '1');
+		document.querySelector("#xx" + 22).setAttribute('radius', '1');
+		document.querySelector("#xxx" + 22).setAttribute('radius', '1');
+		document.querySelector("#xxxx" + 22).setAttribute('radius', '1');
 	} else if (scene == 30){
 		document.querySelector("#x" + 30).setAttribute('radius', '1');
+		document.querySelector("#box" + 1030).setAttribute('radius', '0.001');
 		document.querySelector("#xx" + 30).setAttribute('radius', '1');
+	} else if (scene == 31){
+		document.querySelector("#box" + 31).setAttribute('radius', '0.001');
 	} else if (scene == 32){
 		document.querySelector("#box" + 1032).setAttribute('radius', '0.001');
 		document.querySelector("#x" + 32).setAttribute('radius', '1');
 	} else if (scene == 12){
 		document.querySelector("#box1012").setAttribute('radius', '0.001');
 		document.querySelector("#x" + 12).setAttribute('radius', '1');
+		document.querySelector("#xx" + 12).setAttribute('radius', '1');
 	} else if (scene == 41){
 		document.querySelector("#x" + 41).setAttribute('radius', '1');
+		document.querySelector("#xx" + 41).setAttribute('radius', '1');
+	} else if (scene == 42){
+		document.querySelector("#x" + 42).setAttribute('radius', '1');
+		document.querySelector("#box42").setAttribute('radius', '0.001');		
+	} else if (scene == 43){
+		document.querySelector("#box43").setAttribute('radius', '0.001');
+		document.querySelector("#box1043").setAttribute('radius', '0.001');
+		document.querySelector("#x" + 43).setAttribute('radius', '1');
 	} else if (scene == 44){
 		document.querySelector("#box1044").setAttribute('radius', '0.001');
 		document.querySelector("#x" + 44).setAttribute('radius', '1');
@@ -84,7 +131,44 @@ function setscene(scene) {
 	} else if (scene == 49){
 		document.querySelector("#box1049").setAttribute('radius', '0.001');
 		document.querySelector("#x" + 49).setAttribute('radius', '1');
-	}
+		document.querySelector("#xx" + 49).setAttribute('radius', '1');		
+	} else if (scene == 1){
+		document.querySelector("#x" + 1).setAttribute('radius', '1');
+		document.querySelector("#xx" + 1).setAttribute('radius', '1');
+	} else if (scene == 3){
+		document.querySelector("#x" + 3).setAttribute('radius', '1');
+	} else if (scene == 11){
+		document.querySelector("#box11").setAttribute('radius', '0.001');
+		document.querySelector("#x" + 11).setAttribute('radius', '1');
+	} else if (scene == 56){
+		document.querySelector("#box56").setAttribute('radius', '0.001');
+		document.querySelector("#x" + 56).setAttribute('radius', '1');
+		document.querySelector("#xx" + 56).setAttribute('radius', '1');
+	} else if (scene == 57){
+		document.querySelector("#x" + 57).setAttribute('radius', '1');
+		document.querySelector("#box1057").setAttribute('radius', '0.001');
+	} else if (scene == 66){
+		document.querySelector("#x" + 66).setAttribute('radius', '1');
+		document.querySelector("#xx" + 66).setAttribute('radius', '1');
+		document.querySelector("#box66").setAttribute('radius', '0.001');
+	} else if (scene == 20){
+		document.querySelector("#box20").setAttribute('radius', '0.001');
+		document.querySelector("#x" + 20).setAttribute('radius', '1');
+	} else if (scene == 34){
+		document.querySelector("#x" + 34).setAttribute('radius', '1');
+	} else if (scene == 17){
+		document.querySelector("#x" + 17).setAttribute('radius', '1');
+		document.querySelector("#xx" + 17).setAttribute('radius', '1');		
+	} else if (scene == 16){
+		document.querySelector("#x" + 16).setAttribute('radius', '1');
+	} else if (scene == 26){
+		document.querySelector("#x" + 26).setAttribute('radius', '1');
+	} else if (scene == 23){
+		document.querySelector("#box1023").setAttribute('radius', '0.001');
+		document.querySelector("#x" + 23).setAttribute('radius', '1');
+	} 
+
+
 }
 
 function run(s) {
@@ -152,8 +236,8 @@ var coords = {
 	"10 -5 40"
 	],
 	"s3": [
-	"-6 -5 0",
-	"5 -5 "
+	"-20 0 4",
+	"40 -5 -8"
 	],
 	"s4": [
 	"-7 -5 0",
@@ -269,12 +353,12 @@ var coords = {
 	"-6 -5 0"
 	],
 	"s32": [
-	"10 -5 0",
+	"2 -5 -30",
 	"-7 -5 0"
 	],
 	"s33": [
-	"10 -5 0",
-	"-7 -5 0"
+	"30 -5 1",
+	"-20 -5 0"
 	],
 	"s34": [
 	"10 -5 5",
@@ -345,67 +429,67 @@ var coords = {
 	"15 -5 4"
 	],
 	"s51": [
-	"10 -5 -5",
-	"-10 -5 0"
+	"-20 -5 -5",
+	"0 -5 20"
 	],
 	"s52": [
-	"10 -5 0",
-	"-5 -5 1"
+	"20 -5 0",
+	"-20 -5 0"
 	],
 	"s53": [
-	"10 -5 -1",
-	"-10 -5 0"
+	"-3 -5 20",
+	"4 -5 -20"
 	],
 	"s54": [
-	"22 -5 20",
-	"-10 -5 -10"
+	"25 -5 -10",
+	"-25 -5 10"
 	],
 	"s55": [
-	"10 -5 -5",
-	"-10 -5 0"
+	"20 -4 -4",
+	"-20 -5 4"
 	],
 	"s56": [
 	"-10 -5 0",
-	"5 -5 0"
+	"-13 -9 20"
 	],
 	"s57": [
-	"-10 -5 -8",
+	"0 -5 -20",
 	"6 -5 4"
 	],
 	"s58": [
-	"-10 -5 -5",
-	"7 -5 5"
+	"20 -5 -1",
+	"-20 -5 1"
 	],
 	"s59": [
-	"-10 -5 0",
-	"7 -5 0"
+	"7 -5 -15",
+	"-20 -5 0"
 	],
 	"s60": [
-	"0 -5 -40",
-	"0 -5 10"
+	"20 -5 0",
+	"-15 -5 0"
 	],
 	"s61": [
-	"10 -5 0",
-	"-10 -5 25"
+	"20 -5 -3",
+	"-20 -5 2"
 	],
 	"s62": [
-	"10 -5 10",
-	"-7 -5 -7"
+	"20 -5 -5",
+	"-20 -5 5"
 	],
 	"s63": [
-	"10 -5 -5",
-	"-10 -5 0"
+	"20 -5 3",
+	"-20 -5 -3"
 	],
 	"s64": [
-	"10 -5 0",
-	"-5 -5 1"
+	"20 -5 -3",
+	"-20 -5 3"
 	],
 	"s65": [
-	"10 -5 -1",
-	"-10 -5 0"
+	"-15 -3 0",
+	"20 -5 0"
 	],
 	"s66": [
 	"22 -5 20",
-	"-10 -5 -10"
+	"1 -10 -20"
 	]
 };
