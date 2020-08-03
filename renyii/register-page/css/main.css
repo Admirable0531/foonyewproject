@@ -40,6 +40,7 @@
   }
 }
 
+
 /* ==========================================================================
    #BOX-SIZING
    ========================================================================== */
@@ -117,9 +118,9 @@ button {
 }
 
 body {
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-family: Microsoft YaHei;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 h2 {
@@ -137,7 +138,9 @@ h2 {
    #BACKGROUND
    ========================================================================== */
 .bg {
-  background: #3AAFA9;
+  animation: move 30s ease infinite;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+
 }
 
 /* ==========================================================================
@@ -182,7 +185,8 @@ h2 {
    #HYPERLINK
    ========================================================================== */
 a{
-  color: black;
+  color: blue;
+  font-size: 16px;
   text-decoration: none;
   font-family: Microsoft YaHei;
 }
@@ -195,7 +199,7 @@ h3{
 }
 
 /* ==========================================================================
-   #BUTTON
+   #BUTTON 
    ========================================================================== */
 .btn {
   line-height: 40px;
@@ -203,13 +207,14 @@ h3{
   padding: 0 25px;
   cursor: pointer;
   color: #fff;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  font-family: Microsoft YaHei;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
   font-size: 14px;
   font-weight: 700;
+  width: 100%;
 }
 
 .btn--radius {
@@ -218,56 +223,10 @@ h3{
   border-radius: 3px;
 }
 
-.btn--green {
-  background: #57b846;
+.btn--blue {
+  background: #66a6ff;
 }
-
-.btn--green:hover {
-  background: #4dae3c;
-}
-
-
-
-/* ==========================================================================
-   #CHECKBOX
-   =========================================================================*/
-   .checkbox-custom {
-  opacity: 0;
-  position: absolute;
-}
-.checkbox-custom,
-.checkbox-custom-label {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-  cursor: pointer;
-}
-.checkbox-custom + .checkbox-custom-label:before {
-  content: '';
-  background: #fff;
-  border-radius: 5px;
-  border: 2px solid #ddd;
-  display: inline-block;
-  vertical-align: middle;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
-}
-.checkbox-custom:checked + .checkbox-custom-label:before {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 5px;
-  border: solid blue;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  border-radius: 0px;
-  margin: 0px 15px 5px 5px;
-}
+  
 
 /* ==========================================================================
    #FORM
@@ -342,11 +301,11 @@ input {
 }
 
 .input--terms: {
-  padding-right: : 135px;
+  padding-right: : 5px;
 }
 
 /* ==========================================================================
-   #SELECT2
+   #SELECT2 
    ========================================================================== */
 .select--no-search .select2-search {
   display: none !important;
@@ -368,11 +327,11 @@ input {
   padding-left: 0;
   color: #808080;
   font-size: 16px;
-  font-family: inherit;
+  font-family: Microsoft YaHei;
   font-weight: 500;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow { /*Select的箭头*/
   height: 34px;
   right: 4px;
   display: -webkit-box;
@@ -396,10 +355,10 @@ input {
   display: none;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after { /*Select的箭头*/
-  font-family: "Material-Design-Iconic-Font";
+.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after { 
+  font-family: "Material-Design-Iconic-Font"; 
   content: '\f2f9';
-  font-size: 8px;
+  font-size: 18px;
   color: #ccc;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -429,11 +388,10 @@ input {
 }
 
 /* ==========================================================================
-   #TITLE
+   #TITLE 输入资料以参加抽奖
    ========================================================================== */
 
 .title {
-  text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 37px;
 }
@@ -461,25 +419,27 @@ input {
 }
 
 .card-2 .card-heading {
-  background: url("../images/cool.png") top left/cover no-repeat;
-  width: 40%;
+  background: url("../Images/Fnal.png") top left/cover no-repeat;
+  width: 55%;
   display: table-cell;
 }
 
 .card-2 .card-body {
   display: table-cell;
-  padding: 80px 90px;
+  padding: 80px 70px;
   padding-bottom: 88px;
 }
 
-@media (max-width: 767px) {
+
+/*
+@media (max-width: 910px) {
   .card-2 {
     display: block;
   }
   .card-2 .card-heading {
     width: 100%;
     display: block;
-    padding-top: 300px;
+    padding-top: 950px;
     background-position: left center;
   }
   .card-2 .card-body {
@@ -487,3 +447,29 @@ input {
     padding: 60px 50px;
   }
 }
+
+*/
+@media (max-width: 550px) {
+  .card-2 {
+    display: block;
+  }
+  .card-2 .card-heading {
+    padding: 0;
+    display: block;
+    padding-top: 950px;
+    width: 330px;
+    background-position: center;
+    margin: 0 auto;
+   
+  }
+  .card-2 .card-body {
+    display: block;
+    padding: 50px 50px;
+  }
+
+
+}
+
+
+
+
