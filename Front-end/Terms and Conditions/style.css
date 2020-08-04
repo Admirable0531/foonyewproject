@@ -1,0 +1,27 @@
+body {
+	margin:0;
+	padding: 0;
+	font-size: 20px;
+	font-family: MicrosoftYaHei;
+	color: grey;
+}
+
+.tldr {
+	color: red;
+	font-size:15px;
+}
+
+.website_name {
+	color: blue;
+}
+
+.date {
+	color: purple;
+}
+
+
+@media (max-width: 600px) {
+	body{
+		font-size: 15px;
+	}
+}

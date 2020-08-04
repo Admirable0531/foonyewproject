@@ -1,0 +1,147 @@
+/* Idk why you are here but I want to tell you hack is illegal*/
+
+
+
+/*What is the day that has the most birthdays?
+/*The second least popular birthday falls on Christmas, December 25th, followed by January 1st. 
+Babies delivered on the most common day of the year, September 16, were likely conceived on December 24th, which ranked as the fourth least common birthday.*/
+
+
+body, html {
+	height: 100%;	
+	margin: 0;
+	padding: 0;
+
+}
+
+.bg {
+	background-image: url(test-min.png);
+	height: 100%; /*full screen*/
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	color: black; /*text color*/
+	font-family: Microsoft YaHei;
+
+
+}
+
+
+
+.middle {	/*position text in the middle*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	user-select: none;
+}
+
+/*h1    /*校庆倒数 {
+	display: inline-block;
+	font-size: 80px;
+	letter-spacing: 20px;
+	font-weight: 500; /*set thick or thin characters
+	font-color: black;
+	font-family: Microsoft YaHei;
+	font-stretch: expanded;
+
+	}
+
+		事出必有因，无风不起浪 
+
+#timer {
+	font-size: 50px;
+	font-weight: lighter;
+	word-spacing: 15px;
+	font-family: Microsoft YaHei;
+}
+*/
+
+hr { /*红线*/
+
+	margin: auto;
+	width: 80%;
+	border: 1.5px solid red;
+}
+
+.fa {
+  	padding: 20px;
+ 	font-size: 30px;
+  	width: 50px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  	background: #3B5998;
+  	color: white;
+}
+
+.fa-info {
+	background: #A9A9A9;
+	color: white;
+
+}
+
+.fa-globe {
+	background: #00B7EB;
+	color: white;
+
+}
+
+
+@media screen and (min-width: 601px) {
+  h1 {
+  	font-size: 60px;
+	letter-spacing: 20px;
+	font-weight: 500; /*set thick or thin characters*/
+	color: black;
+	font-family: Microsoft YaHei;
+	font-stretch: expanded;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+	font-weight: 500; /*set thick or thin characters*/
+	color: black;
+	font-family: Microsoft YaHei;
+	font-stretch: expanded;
+
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #timer {
+    font-size: 40px;
+    letter-spacing: 5px;
+	font-weight: 500; /*set thick or thin characters*/
+	color: black;
+	font-family: Microsoft YaHei;
+	font-stretch: expanded;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #timer {
+  	font-size: 15px;
+    letter-spacing: 1px;
+	font-weight: 500; /*set thick or thin characters*/
+	color: black;
+	font-family: Microsoft YaHei;
+	font-stretch: expanded;
+    
+  }
+}
+
+
+/*😔*/
+/*FoonYewProject-Front-end*/
