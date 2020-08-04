@@ -16,7 +16,7 @@ body, html {
 	background-size: cover;
 	position: relative;
 	color: black; /*text color*/
-	font-family: Microsoft YaHei;
+	font-family: MicrosoftYaHei;
 }
 
 
@@ -76,7 +76,7 @@ hr { /*红线*/
 	letter-spacing: 10px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
-	font-family: Microsoft YaHei;
+	font-family: MicrosoftYaHei;
 	font-stretch: expanded;
   }
 }
@@ -86,7 +86,7 @@ hr { /*红线*/
   letter-spacing: 5px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
-	font-family: Microsoft YaHei;
+	font-family: MicrosoftYaHei;
 	font-stretch: expanded;
   }
 }
@@ -118,7 +118,7 @@ hr { /*红线*/
   letter-spacing: 3px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
-	font-family: Microsoft YaHei;
+	font-family: MicrosoftYaHei;
 	font-stretch: expanded;
 
   }
@@ -130,7 +130,7 @@ hr { /*红线*/
   letter-spacing: 1px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
-	font-family: Microsoft YaHei;
+	font-family: MicrosoftYaHei;
 	font-stretch: expanded;
     
   }
