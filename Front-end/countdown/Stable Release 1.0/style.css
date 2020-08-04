@@ -72,7 +72,7 @@ hr { /*红线*/
    ========================================================================== */
 @media screen and (min-width: 601px) { 
   h1 {
-  	font-size: 50px;
+  font-size: 50px;
 	letter-spacing: 10px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
@@ -82,8 +82,8 @@ hr { /*红线*/
 }
 @media screen and (min-width: 601px) {
   #timer {
-    font-size: 40px;
-    letter-spacing: 5px;
+  font-size: 35px;
+  letter-spacing: 5px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
 	font-family: Microsoft YaHei;
@@ -93,7 +93,7 @@ hr { /*红线*/
 
 @media screen and (min-width: 601px)  {
   .fa {
-  	padding: 25px;
+  padding: 25px;
 	font-size: 30px;
 	width: 50px;
 	text-align: center;
@@ -114,8 +114,8 @@ hr { /*红线*/
    ========================================================================== */
 @media screen and (max-width: 600px)  {
   h1 {
-    font-size: 20px;
-    letter-spacing: 3px;
+  font-size: 20px;
+  letter-spacing: 3px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
 	font-family: Microsoft YaHei;
@@ -126,8 +126,8 @@ hr { /*红线*/
 
 @media screen and (max-width:600px)	{
   #timer {
-  	font-size: 15px;
-    letter-spacing: 1px;
+  font-size: 15px;
+  letter-spacing: 1px;
 	font-weight: 500; /*set thick or thin characters*/
 	color: black;
 	font-family: Microsoft YaHei;
@@ -138,20 +138,20 @@ hr { /*红线*/
 
 @media screen and (max-width:600px)  {
   .fa {
-  	padding: 10px;
+  padding: 10px;
  	font-size: 15px;
-  	max-width: 10%;
-  	margin: 1px;
-  	text-align: center;
-  	text-decoration: none;
+  max-width: 10%;
+  margin: 1px;
+  text-align: center;
+  text-decoration: none;
   	 
   }
 }
 
 @media screen and (max-width: 600px) {
   img {
-   width: 50px;
-   height: 75px;
+  width: 50px;
+  height: 75px;
   }
 }
 

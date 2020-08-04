@@ -1,5 +1,5 @@
 //set date for count down
-var countDownDate = new Date("Aug 8, 2020 08:08:00 GMT+0800").getTime();
+var countDownDate = new Date("Aug 4, 2020 20:28:00 GMT+0800").getTime();
 // update the counter down every 1 sec
 var countDownFunction = setInterval(function(){
       // get today date
@@ -18,11 +18,10 @@ var countDownFunction = setInterval(function(){
       //if the count down is over , write some text
       if(distance < 0) {
         clearInterval(countDownFunction);
-        document.getElementById("timer").innerHTML = "Redirect to Xiao Qing Offical Page";
-        setTimeout("location.href = '1.html';",3000);//拜托给时间过完才进去plsss
+        document.getElementById("timer").innerHTML = "转址至校庆趣味导览网站";
+        setTimeout("location.href = '1.html';",4000);//拜托给时间过完才进去plsss
             }
-       
-    
+
      }, 1000); 
 
 
