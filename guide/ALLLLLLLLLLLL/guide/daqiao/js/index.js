@@ -1,7 +1,3 @@
-function setplace(p) {
-	localStorage.setItem('place', p);
-	console.log(localStorage.getItem('place'));
-}
 window.onload = function() {
 	assets();
 	spheres();
@@ -133,6 +129,7 @@ function setscene(scene) {
 		case 20:
 			document.querySelector("#box20").setAttribute('radius', '0.001');
 			document.querySelector("#x" + 20).setAttribute('radius', '1');
+			document.getElementById('video').style.display = "block";
 			break;
 
 		case 21:

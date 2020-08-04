@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>宽柔中学的趣味导览</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="../games/flappyball/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/popupsub.css">
+	<link rel="stylesheet" type="text/css" href="../css/popupmain.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/coord.js"></script>
+	<script src="../js/global.js"></script>
+    <script src="../games/food/popup.js" defer></script>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+</head>
+<body>
+<button class="button button-game" type="button" id="food" style="z-index: 10; position: relative;display: none;" data-modal-target="#modal">玩游戏</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">Food Wars</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div style="z-index: 10; position: relative;" class="modal-body" id="game-content">
+			<script src="../games/food/sketch.js"></script>
+			<script src="../games/food/food.js"></script>
+		</div>
+	</div>
+	<div id="overlay"></div>
+	<button id="video" type="button" class="button btn-info" onclick="video();" data-target="#demo"><span>团体影片 </span></button>
+	<div class="youtube" id="youtube1" style="display: none; width: 100%; height: 100%; text-align: center; z-index: 3;">
+		<iframe style="width: 70%; height: 70%; display: inline-block; position: relative;" src="https://www.youtube.com/embed/5UahoNeXamI" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+	</div>
+	<button id="audio" type="button" class="button button-2 btn-info" onclick="audio();" data-target="#demo"><span>录音解说 </span></button>
+	<audio id="audio1">
+		<source src="../recordings/library.mp3" type="audio/mpeg">
+		</audio>
+	<audio id="audio2">
+		<source src="../recordings/kongzi.mp3" type="audio/mpeg">
+		</audio>
+	<div id="vr">
+		<a-scene>
+			<a-assets id="assets">
+			</a-assets>
+
+			<a-assets>
+				<img id="1" src="pictures/(1).JPG" rotation="0 -90 0">
+				<img id="2" src="pictures/(2).JPG" rotation="0 -90 0">
+				<img id="3" src="pictures/(3).JPG" rotation="0 -90 0">
+				<img id="6" src="pictures/(6).JPG" rotation="0 -90 0">
+				<img id="7" src="pictures/(7).JPG" rotation="0 -90 0">
+			</a-assets>
+
+			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
+
+			<a-sky id="abackground"></a-sky>
+			<a-entity id="scenes">
+			</a-entity>
+			<a-entity id="scene">
+				<a-entity class="scene4"><a-sphere id="x4" color="green" onclick="xrun(6)" position="-7 -5 7" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene6"><a-sphere id="x6" color="green" onclick="xrun(4)" position="-10 -5 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene5"><a-sphere id="x5" color="green" onclick="xrun(7)" position="-5 -5 -7" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene7"><a-sphere id="x7" color="green" onclick="xrun(5)" position="-10 -5 5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene9"><a-sphere id="x9" color="green" onclick="setplace(1); location.href = '../litang/index.html';" position="10 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene2"><a-sphere id="x2" color="green" onclick="setplace(26); location.href = '../daqiao/index.html';" position="20 -10 -3" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene19"><a-sphere id="x19" color="green" onclick="xrun(21)" position="-10 -5 -25" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene27"><a-sphere id="x27" color="green" onclick="xrun(20)" position="0 -5 -30" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene20"><a-sphere id="x20" color="green" onclick="xrun(27)" position="20 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene29"><a-sphere id="x29" color="green" onclick="xrun(37)" position="-20 -5 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene37"><a-sphere id="x37" color="green" onclick="xrun(29)" position="-3 -5 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene11"><a-sphere id="x11" color="green" onclick="xrun(20)" position="-5 -5 -5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene20"><a-sphere id="xx20" color="green" onclick="xrun(11)" position="0 -5 7" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene39"><a-sphere id="x39" color="green" onclick="xrun(42)" position="1 -5 -5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene42"><a-sphere id="x42" color="green" onclick="xrun(39)" position="0 -5 -6" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene64"><a-sphere id="x64" color="green" onclick="xrun(59)" position="-5 -5 10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene59"><a-sphere id="x59" color="green" onclick="xrun(64)" position="0 -5 -20" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene12"><a-sphere id="x12" color="green" onclick="xrun(41)" position="10 -5 10", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene41"><a-sphere id="x41" color="green" onclick="xrun(12)" position="-5 -5 5", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene40"><a-sphere id="x40" color="green" onclick="xrun(38)" position="-10 -5 10", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene38"><a-sphere id="x38" color="green" onclick="xrun(40)" position="5 -5 -10", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene21"><a-sphere id="x21" color="green" onclick="xrun(19)" position="10 -5 0", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene28"><a-sphere id="x28" color="green" onclick="xrun(37)" position="10 -5 20", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene37"><a-sphere id="xx37" color="green" onclick="xrun(28)" position="-10 -5 -7", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene10"><a-sphere id="x10" color="green" onclick="setplace(23); location.href = '../daqiao/index.html';" position="10 -5 0" position="5 -5 -10", radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+			</a-entity>
+		</a-scene>
+	</div>
+</body>
+</html>

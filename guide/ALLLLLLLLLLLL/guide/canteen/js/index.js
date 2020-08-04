@@ -116,6 +116,11 @@ function setscene(scene) {
 			document.querySelector("#x" + 44).setAttribute('radius', '1');
 			break;
 
+			
+		case 49:
+			document.getElementById('video').style.display = "block";
+			document.getElementById('piano').style.display = "block";
+			break;
 	}
 }
 
