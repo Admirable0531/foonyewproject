@@ -15,6 +15,11 @@ Stable Release
 2. 404 
 3. Reg Form
 4. Terms and Conditions
+5. Credit 
+6. Ending Page
+
+
+
 
 
 
@@ -25,7 +30,7 @@ Favicon （done)
 404 Error (done)
 Images with alt text
 Share function
-Compress Images
+Compress Images (Done)
 
 Countdown Timer 
 About us (done)
@@ -33,11 +38,33 @@ Link to Facebook Page (done)
 Link to foonyew.edu.my (done)
 
 Ending Page
-Feedback
-Credit
-Contact us 
+Feedback (done)
+Credit (done)
+
+
+
 
 WIP
 Infomation Page (done)
 Matching Game (done) 
 Credit Page (done)
+
+Reference / Credit
+countdown
+www.w3schools.com/howto/howto_js_countdown.asp
+https://www.youtube.com/watch?v=DpjQAyrx3UY
+
+regform
+https://colorlib.com
+
+ending page
+Cruip.com
+
+404
+https://youtu.be/PbKOX2tkHlI-->
+
+
+
+
+
+
