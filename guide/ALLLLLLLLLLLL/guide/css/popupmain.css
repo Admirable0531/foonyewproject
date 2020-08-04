@@ -5,8 +5,7 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 2vw;
-    padding: 1.2%;
-    width: 15vw;
+    padding: 15px 32px;
     bottom: 120px;
     left: 0.5%;
     cursor: pointer;
@@ -23,8 +22,7 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 2vw;
-    padding: 1.2%;
-    width: 15vw;
+    padding: 15px 32px;
     bottom: 30px;
     left: 0.5%;
     cursor: pointer;
@@ -39,9 +37,8 @@
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 2vw;
-    padding: 1.2%;
-    width: 15vw;
+    font-size: 3vw;
+    padding: 15px 32px;
     top: 30px;
     right: 0.5%;
     cursor: pointer;
