@@ -26,12 +26,44 @@ window.addEventListener("wheel", event => {
   });
 
 function clearAll() {
-	for (var i=1; i<=43; i++) {
+	for (var i=1; i<=48; i++) {
 		document.querySelector("#box" + i).setAttribute('radius', '0.001');
 	}
-	for (var i=1; i<=42; i++) {
+	for (var i=1; i<=47; i++) {
 		var value = i + 1001;
 		document.querySelector("#box" + value).setAttribute('radius', '0.001');
+		document.querySelector("#x6").setAttribute('radius', '0.001');
+		document.querySelector("#x5").setAttribute('radius', '0.001');
+		document.querySelector("#x32").setAttribute('radius', '0.001');
+		document.querySelector("#x7").setAttribute('radius', '0.001');
+		document.querySelector("#x31").setAttribute('radius', '0.001');
+		document.querySelector("#x16").setAttribute('radius', '0.001');
+		document.querySelector("#x25").setAttribute('radius', '0.001');
+		document.querySelector("#x19").setAttribute('radius', '0.001');
+		document.querySelector("#x29").setAttribute('radius', '0.001');
+		document.querySelector("#xx29").setAttribute('radius', '0.001');
+		document.querySelector("#x24").setAttribute('radius', '0.001');
+		document.querySelector("#x9").setAttribute('radius', '0.001');
+		document.querySelector("#x28").setAttribute('radius', '0.001');
+		document.querySelector("#x36").setAttribute('radius', '0.001');
+		document.querySelector("#x34").setAttribute('radius', '0.001');
+		document.querySelector("#x43").setAttribute('radius', '0.001');
+		document.querySelector("#xx43").setAttribute('radius', '0.001');
+		document.querySelector("#x42").setAttribute('radius', '0.001');
+		document.querySelector("#xx42").setAttribute('radius', '0.001');
+		document.querySelector("#x41").setAttribute('radius', '0.001');
+		document.querySelector("#xx41").setAttribute('radius', '0.001');
+		document.querySelector("#x40").setAttribute('radius', '0.001');
+		document.querySelector("#xx40").setAttribute('radius', '0.001');
+		document.querySelector("#x39").setAttribute('radius', '0.001');
+		document.querySelector("#xx39").setAttribute('radius', '0.001');
+		document.querySelector("#x37").setAttribute('radius', '0.001');
+		document.querySelector("#xx37").setAttribute('radius', '0.001');
+		document.querySelector("#xxx37").setAttribute('radius', '0.001');
+		document.querySelector("#x38").setAttribute('radius', '0.001');
+		document.querySelector("#x44").setAttribute('radius', '0.001');
+		document.querySelector("#x48").setAttribute('radius', '0.001');
+		document.querySelector("#x45").setAttribute('radius', '0.001');
 	}
 }
 
@@ -41,6 +73,87 @@ function setscene(scene) {
 	if(scene != 1) {
 		document.querySelector("#box" + (scene+1000)).setAttribute('radius', '1');
 	} else {	}
+	if (scene == 6){
+		document.querySelector("#x" + 6).setAttribute('radius', '1');
+	}
+	if (scene == 5){
+		document.querySelector("#x" + 5).setAttribute('radius', '1');
+	}
+	if (scene == 32){
+		document.querySelector("#x" + 32).setAttribute('radius', '1');
+	}
+	if (scene == 7){
+		document.querySelector("#x" + 7).setAttribute('radius', '1');
+	}
+	if (scene == 31){
+		document.querySelector("#x" + 31).setAttribute('radius', '1');
+	}
+	if (scene == 16){
+		document.querySelector("#x" + 16).setAttribute('radius', '1');
+	}
+	if (scene == 25){
+		document.querySelector("#x" + 25).setAttribute('radius', '1');
+	}
+	if (scene == 19){
+		document.querySelector("#x" + 19).setAttribute('radius', '1');
+	}
+	if (scene == 29){
+		document.querySelector("#x" + 29).setAttribute('radius', '1');
+		document.querySelector("#xx" + 29).setAttribute('radius', '1');
+	}
+	if (scene == 24){
+		document.querySelector("#x" + 24).setAttribute('radius', '1');
+	}
+	if (scene == 9){
+		document.querySelector("#x" + 9).setAttribute('radius', '1');
+	}
+	if (scene == 28){
+		document.querySelector("#x" + 28).setAttribute('radius', '1');
+	}
+	if (scene == 36){
+		document.querySelector("#x" + 36).setAttribute('radius', '1');
+	}
+	if (scene == 34){
+		document.querySelector("#x" + 34).setAttribute('radius', '1');
+	}
+	if (scene == 43){
+		document.querySelector("#x" + 43).setAttribute('radius', '1');
+		document.querySelector("#xx" + 43).setAttribute('radius', '1');
+	}
+	if (scene == 42){
+		document.querySelector("#x" + 42).setAttribute('radius', '1');
+		document.querySelector("#xx" + 42).setAttribute('radius', '1');
+	}
+	if (scene == 41){
+		document.querySelector("#x" + 41).setAttribute('radius', '1');
+		document.querySelector("#xx" + 41).setAttribute('radius', '1');
+	}
+	if (scene == 40){
+		document.querySelector("#x" + 40).setAttribute('radius', '1');
+		document.querySelector("#xx" + 40).setAttribute('radius', '1');
+	}
+	if (scene == 39){
+		document.querySelector("#x" + 39).setAttribute('radius', '1');
+		document.querySelector("#xx" + 39).setAttribute('radius', '1');
+	}
+	if (scene == 37){
+		document.querySelector("#x" + 37).setAttribute('radius', '1');
+		document.querySelector("#xx" + 37).setAttribute('radius', '1');
+		document.querySelector("#xxx" + 37).setAttribute('radius', '1');
+	}
+	if (scene == 38){
+		document.querySelector("#x" + 38).setAttribute('radius', '1');
+	}
+
+	if (scene == 44){
+		document.querySelector("#x" + 44).setAttribute('radius', '1');
+	}
+	if (scene == 48){
+		document.querySelector("#x" + 48).setAttribute('radius', '1');
+	}
+	if (scene == 45){
+		document.querySelector("#x" + 45).setAttribute('radius', '1');
+	}
 }
 
 function run(s) {
@@ -49,6 +162,12 @@ function run(s) {
 		setscene(s+1);
 	}
 	console.log("this is scene " + (s+1))
+}
+
+function xrun(s) {
+	clearAll();
+	setscene(s);
+	console.log("this is scene " + (s))
 }
 
 function runback(s) {
@@ -61,8 +180,8 @@ function runback(s) {
 
 function assets() {
 	var allassets;
-	for(var i=1; i<=40; i++) {
-		allassets = allassets + '<img id="' + (i+3) + '" src="pictures/1/(' + i + ').JPG" rotation="0 -90 0">';
+	for(var i=1; i<=48; i++) {
+		allassets = allassets + '<img id="' + i + '" src="pictures/(' + i + ').JPG" rotation="0 -90 0">';
 	}
 	document.getElementById("assets").innerHTML = allassets;
 }
@@ -84,173 +203,3 @@ function debug(s) {
 	setscene(s);
 }
 
-var coords = {
-	"s2": [
-	"10 -5 8",
-	"-5 -5 -5"
-	],
-	"s3": [
-	"5 -5 -1",
-	"-6 -5 0"
-	],
-	"s4": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s5": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s6": [
-	"10 -5 5",
-	"-10 -5 -5"
-	],
-	"s7": [
-	"10 -5 -5",
-	"-10 -5 5"
-	],
-	"s8": [
-	"10 -5 3;",
-	"-7 -5 0"
-	],
-	"s9": [
-	"10 -5 0",
-	"-10 -5 -2"
-	],
-	"s10": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s11": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s12": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s13": [
-	"-10 -5 5",
-	"10 -5 -2"
-	],
-	"s14": [
-	"-8 -5 0",
-	"8 -5 0"
-	],
-	"s15": [
-	"-10 -5 0",
-	"10 -5 -2"
-	],
-	"s16": [
-	"-10 -5 0",
-	"5 -5 0"
-	],
-	"s17": [
-	"-10 -5 -8",
-	"6 -5 4"
-	],
-	"s18": [
-	"-10 -5 -5",
-	"7 -5 5"
-	],
-	"s19": [
-	"-10 -5 0",
-	"7 -5 0"
-	],
-	"s20": [
-	"0 -5 -40",
-	"0 -5 10"
-	],
-	"s21": [
-	"10 -5 0",
-	"-10 -5 25"
-	],
-	"s22": [
-	"10 -5 10",
-	"-7 -5 -7"
-	],
-	"s23": [
-	"10 -5 -5",
-	"-10 -5 0"
-	],
-	"s24": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s25": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s26": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s27": [
-	"10 -5 -5",
-	"-10 -5 0"
-	],
-	"s28": [
-	"8 -5 0",
-	"-8 -5 0"
-	],
-	"s29": [
-	"10 -5 0",
-	"-10 -5 -2"
-	],
-	"s30": [
-	"10 -5 8",
-	"-5 -5 -5"
-	],
-	"s31": [
-	"5 -5 -1",
-	"-6 -5 0"
-	],
-	"s32": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s33": [
-	"10 -5 0",
-	"-7 -5 0"
-	],
-	"s34": [
-	"10 -5 5",
-	"-10 -5 -5"
-	],
-	"s35": [
-	"10 -5 -5",
-	"-10 -5 5"
-	],
-	"s36": [
-	"10 -5 3;",
-	"-7 -5 0"
-	],
-	"s37": [
-	"10 -5 0",
-	"-10 -5 -2"
-	],
-	"s38": [
-	"10 -5 0",
-	"-5 -5 1"
-	],
-	"s39": [
-	"10 -5 -1",
-	"-10 -5 0"
-	],
-	"s40": [
-	"22 -5 20",
-	"-10 -5 -10"
-	],
-	"s41": [
-	"-10 -5 5",
-	"10 -5 -2"
-	],
-	"s42": [
-	"-8 -5 0",
-	"8 -5 0"
-	],
-	"s43": [
-	"-10 -5 0",
-	"10 -5 -2"
-	]
-};
