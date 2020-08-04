@@ -38,7 +38,14 @@ function clearAll() {
 	document.querySelector("#x5").setAttribute('radius', '0.001');
 	document.querySelector("#x18").setAttribute('radius', '0.001');
 	document.querySelector("#x17").setAttribute('radius', '0.001');
+	document.querySelector("#x32").setAttribute('radius', '0.001');
 	document.querySelector("#xx17").setAttribute('radius', '0.001');
+	document.querySelector("#x33").setAttribute('radius', '0.001');
+	document.querySelector("#xx33").setAttribute('radius', '0.001');
+	document.querySelector("#xx18").setAttribute('radius', '0.001');
+	document.querySelector("#x45").setAttribute('radius', '0.001');
+	document.querySelector("#x55").setAttribute('radius', '0.001');
+	document.querySelector("#x44").setAttribute('radius', '0.001');
 
 	document.getElementById('audio').style.display = "none";
 	document.getElementById("video").style.display = "none";
@@ -76,6 +83,33 @@ function setscene(scene) {
 
 		case 18:
 			document.querySelector("#x" + 18).setAttribute('radius', '1');
+			document.querySelector("#xx" + 18).setAttribute('radius', '1');
+			break;
+
+		case 32:
+			document.querySelector("#box32").setAttribute('radius', '0.001');
+			document.querySelector("#x" + 32).setAttribute('radius', '1');
+			break;
+
+		case 33:
+			document.querySelector("#box1033").setAttribute('radius', '0.001');
+			document.querySelector("#x" + 33).setAttribute('radius', '1');
+			document.querySelector("#xx" + 33).setAttribute('radius', '1');
+			break;
+
+		case 45:
+			document.querySelector("#box1045").setAttribute('radius', '0.001');
+			document.querySelector("#x" + 45).setAttribute('radius', '1');
+			break;
+
+		case 55:
+			document.querySelector("#box55").setAttribute('radius', '0.001');
+			document.querySelector("#x" + 55).setAttribute('radius', '1');
+			break;
+
+		case 44:
+			document.querySelector("#box44").setAttribute('radius', '0.001');
+			document.querySelector("#x" + 44).setAttribute('radius', '1');
 			break;
 
 	}

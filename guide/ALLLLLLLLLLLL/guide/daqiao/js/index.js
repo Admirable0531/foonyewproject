@@ -74,6 +74,8 @@ function clearAll() {
 	document.querySelector("#xx12").setAttribute('radius', '0.001');
 	document.querySelector("#xx26").setAttribute('radius', '0.001');
 	document.querySelector("#xx23").setAttribute('radius', '0.001');
+	document.querySelector("#xxx56").setAttribute('radius', '0.001');
+	document.querySelector("#xxx66").setAttribute('radius', '0.001');
 	document.getElementById('audio').style.display = "none";
 
 }
@@ -220,6 +222,7 @@ function setscene(scene) {
 			document.querySelector("#box56").setAttribute('radius', '0.001');
 			document.querySelector("#x" + 56).setAttribute('radius', '1');
 			document.querySelector("#xx" + 56).setAttribute('radius', '1');
+			document.querySelector("#xxx" + 56).setAttribute('radius', '1');
 			break;
 
 		case 57:
@@ -230,6 +233,7 @@ function setscene(scene) {
 		case 66:
 			document.querySelector("#x" + 66).setAttribute('radius', '1');
 			document.querySelector("#xx" + 66).setAttribute('radius', '1');
+			document.querySelector("#xxx" + 66).setAttribute('radius', '1');
 			document.querySelector("#box66").setAttribute('radius', '0.001');
 			break;
 
