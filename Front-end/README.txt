@@ -8,7 +8,13 @@ Final的countdown 是可以用的
 但是Final Folder是所有资料整合在一起的 不要乱改 <3
 
 
+Countdown (about us) >Reg form (Terms and Conditions) >360, 游戏 > Ending Page (credit) [404 /*if*/ ]
 
+Stable Release
+1. Countdown
+2. 404 
+3. Reg Form
+4. Terms and Conditions
 
 
 

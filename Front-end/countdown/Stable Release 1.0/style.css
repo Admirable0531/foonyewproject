@@ -10,7 +10,7 @@ body, html {
 }
 
 .bg {
-	background-image: url(/Images/0.5.png);
+	background-image: url(0.5.png);
 	height: 100%; /*full screen*/
 	background-position: center;
 	background-size: cover;
@@ -38,7 +38,7 @@ hr { /*红线*/
 
 .fa {
   	padding: 150px;
- 	font-size: 30px;
+   	font-size: 30px;
   	width: 50px;
   	text-align: center;
   	text-decoration: none;
