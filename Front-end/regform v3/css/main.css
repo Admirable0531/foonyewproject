@@ -3,28 +3,18 @@
    #FONT
    ========================================================================== */
 .font-robo {
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
 }
 
 /* ==========================================================================
    #GRID
    ========================================================================== */
 .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .row-space {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -45,8 +35,6 @@
    #BOX-SIZING
    ========================================================================== */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -118,7 +106,7 @@ button {
 }
 
 body {
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
   font-weight: 400;
   font-size: 15px;
 }
@@ -188,14 +176,14 @@ a{
   color: blue;
   font-size: 16px;
   text-decoration: none;
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
 }
 
 
 h3{
   color: red;
   text-decoration: none;
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
 }
 
 /* ==========================================================================
@@ -207,7 +195,7 @@ h3{
   padding: 0 25px;
   cursor: pointer;
   color: #fff;
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -241,7 +229,7 @@ input {
   
   /*width: 100;*/
   font-size: 14px;
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
 }
 
 /* input group 1 */
@@ -300,8 +288,8 @@ input {
   color: #808080;
 }
 
-.input--terms: {
-  padding-right: : 5px;
+.input--terms {
+  padding-right: 5px;
 }
 
 /* ==========================================================================
@@ -327,7 +315,7 @@ input {
   padding-left: 0;
   color: #808080;
   font-size: 16px;
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
   font-weight: 500;
 }
 
@@ -432,24 +420,9 @@ input {
 }
 
 
-/*
-@media (max-width: 910px) {
-  .card-2 {
-    display: block;
-  }
-  .card-2 .card-heading {
-    width: 100%;
-    display: block;
-    padding-top: 950px;
-    background-position: left center;
-  }
-  .card-2 .card-body {
-    display: block;
-    padding: 60px 50px;
-  }
-}
 
-*/
+
+
 @media (max-width: 550px) {
   .card-2 {
     display: block;
