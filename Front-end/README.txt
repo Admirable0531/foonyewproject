@@ -11,12 +11,16 @@ Final的countdown 是可以用的
 Countdown (about us) >Reg form (Terms and Conditions) >360, 游戏 > Ending Page (credit) [404 /*if*/ ]
 
 Stable Release
-1. Countdown
-2. 404 
-3. Reg Form
-4. Terms and Conditions
-5. Credit 
-6. Ending Page
+1. Countdown kf
+2. 404 tang
+3. Reg Form kf
+4. Terms and Conditions kf
+5. Credit tang
+6. Ending Page miku
+7. Matching Game kf 
+
+NOT STABLE 
+8. Info tang
 
 
 
