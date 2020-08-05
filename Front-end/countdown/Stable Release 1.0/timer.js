@@ -1,5 +1,5 @@
 //set date for count down
-var countDownDate = new Date("Aug 4, 2020 20:28:00 GMT+0800").getTime();
+var countDownDate = new Date("Aug 8, 2020 08:08:00 GMT+0800").getTime();
 // update the counter down every 1 sec
 var countDownFunction = setInterval(function(){
       // get today date
