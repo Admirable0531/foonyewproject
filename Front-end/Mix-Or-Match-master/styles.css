@@ -181,13 +181,13 @@ body {
 
   .card {
   position: relative;
-  height: 125px;
-  width: 75px;
+  height: 175px;
+  width: 125px;
   }
 
 
   .game-container {
-    grid-template-columns: repeat(4, auto)
+    grid-template-columns: repeat(3, auto)
   }
 
   .game-info-container {
