@@ -20,7 +20,25 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
 </head>
 <body>
-
+	<div class="menu-container" style="z-index: 10;display: none;" id="nav">
+	<div class="button-nav">
+  传送门
+		  <span class="fas fa-bars"></span>
+		</div>
+  <ul>
+  <li><a onclick="setplace(1); location.href = '../redbrick/index.html';">入口</a></li>
+  <li><a onclick="setplace(12); location.href = '../library/index.html';">小食堂</a></li>
+  <li><a onclick="setplace(49); location.href = '../canteen/index.html';">音乐室</a></li>
+  <li><a onclick="setplace(42); location.href = '../library/index.html';">图书馆</a></li>
+  <li><a onclick="setplace(40); location.href = '../daqiao/index.html';">实验室</a></li>
+  <li><a onclick="setplace(33); location.href = '../jk/index.html';">边疆</a></li>
+  <li><a onclick="setplace(10); location.href = '../redbrick/index.html';">草场</a></li>
+  <li><a onclick="setplace(51); location.href = '../library/index.html';">文物室</a></li>
+  <li><a onclick="setplace(44); location.href = '../litang/index.html';">天台</a></li>
+  <li><a onclick="setplace(28); location.href = '../litang/index.html';">宿舍</a></li>
+  </ul>
+  </div>
+  
 	<button class="button button-game" type="button" id="flappy" style="z-index: 10; position: relative;display: none;" data-modal-target="#modal">玩游戏</button>
 	<div class="modal" id="modal">
 		<div class="modal-header">

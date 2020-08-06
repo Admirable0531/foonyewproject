@@ -54,6 +54,7 @@ function clearAll() {
 	document.querySelector("#xx37").setAttribute('radius', '0.001');
 	document.querySelector("#x11").setAttribute('radius', '0.001');
 	document.querySelector("#xx20").setAttribute('radius', '0.001');
+	document.querySelector("#xxx20").setAttribute('radius', '0.001');
 	document.querySelector("#x39").setAttribute('radius', '0.001');
 	document.querySelector("#x42").setAttribute('radius', '0.001');
 	document.querySelector("#x64").setAttribute('radius', '0.001');
@@ -62,6 +63,7 @@ function clearAll() {
 	document.querySelector("#x41").setAttribute('radius', '0.001');
 	document.querySelector("#x40").setAttribute('radius', '0.001');
 	document.querySelector("#x38").setAttribute('radius', '0.001');
+	document.querySelector("#xx19").setAttribute('radius', '0.001');
 	document.getElementById('audio').style.display = "none";
 	document.getElementById('video').style.display = "none";
 	document.getElementById('food').style.display = "none";
@@ -114,11 +116,13 @@ function setscene(scene) {
 
 		case 19:
 			document.querySelector("#x" + 19).setAttribute('radius', '1');
+			document.querySelector("#xx" + 19).setAttribute('radius', '1');
 			break;
 
 		case 20:
 			document.querySelector("#x" + 20).setAttribute('radius', '1');
 			document.querySelector("#xx" + 20).setAttribute('radius', '1');
+			document.querySelector("#xxx" + 20).setAttribute('radius', '1');
 			break;
 
 		case 21:

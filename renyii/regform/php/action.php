@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 
 function random_str(
     int $length = 64,
-    string $keyspace = '0123456789'
+    string $keyspace = '0123456789SabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 ): string {
     if ($length < 1) {
         throw new \RangeException("Length must be a positive integer");
@@ -39,13 +39,15 @@ $sql = "INSERT INTO mystudents (random_id,student_id,name,contact,school,type) V
 
 //创建会话数据
 if(empty($_SESSION)){
-	
-    $_SESSION['random_id'] = "$random_id";
+
     $_SESSION['name'] = "$name";
     $_SESSION['id'] = "$student_id";
     echo "<p>您的资料已经提交成功。</p>";
+    session_write_close(); 
 }else{
+    header('Location: http://www.google.com');
     echo "<p>Session data exists</p>";
+    die();
 
 
 }
@@ -58,7 +60,7 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-session_write_close(); 
+
 $conn->close();
 //header('Location: http://www.google.com');
 ?>

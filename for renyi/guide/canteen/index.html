@@ -1,0 +1,81 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>宽柔中学的趣味导览</title>
+	<link rel="stylesheet" type="text/css" href="../css/popupsub.css">
+	<link rel="stylesheet" type="text/css" href="../css/popupmain.css">
+	<link href="../games/piano/style.css" rel="stylesheet">
+	<script src="./js/index.js"></script>
+	<script src="./js/coord.js"></script>
+	<script src="../js/global.js"></script>
+	<script defer src="../games/piano/popup.js"></script>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="../games/piano/p5.js"></script>
+	<script src="../games/piano/p5.sound.min.js"></script>
+</head>
+<body>
+	<button class="button button-game" type="button" id="piano" style="z-index: 10; position: relative;display: none;" data-modal-target="#modal">玩游戏</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">Piano</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div style="z-index: 10; position: relative;" class="modal-body" id="game-content">
+			<script src="../games/piano/sketch.js"></script>
+			<script src="../games/piano/key.js"></script>
+		</div>
+	</div>
+
+	<div id="overlay"></div>
+
+	<button id="audio" type="button" class="button button-2 btn-info" onclick="audio();" data-target="#demo"><span>录音解说 </span></button>
+	<button id="video" type="button" class="button btn-info" onclick="video();" data-target="#demo"><span>团体影片 </span></button>
+	<div class="youtube" id="youtube1" style="display: none; width: 100%; height: 100%; text-align: center; z-index: 3;">
+		<iframe style="width: 70%; height: 70%; display: inline-block; position: relative;" src="https://www.youtube.com/embed/V37j1LHw8O8" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+	</div>
+	<div class="youtube" id="youtube2" style="display: none; width: 100%; height: 100%; text-align: center; z-index: 3;">
+		<iframe style="width: 70%; height: 70%; display: inline-block; position: relative;" src="https://www.youtube.com/embed/JJ38Ry8m-Ug" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+	</div>
+	<audio id="audio1">
+		<source src="../recordings/friend.mp3" type="audio/mpeg">
+		</audio>
+	<audio id="audio2">
+		<source src="../recordings/canteen.mp3" type="audio/mpeg">
+		</audio>
+
+	<div id="vr">
+		<a-scene>
+			<a-assets id="assets">
+			</a-assets>
+
+			<a-assets>
+				<img id="1" src="pictures/(1).jpg" rotation="0 -90 0">
+				<img id="2" src="pictures/(2).jpg" rotation="0 -90 0">
+				<img id="3" src="pictures/(3).jpg" rotation="0 -90 0">
+			</a-assets>
+			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
+
+			<a-sky id="abackground"></a-sky>
+			<a-entity id="scenes">
+			</a-entity>
+			<a-entity id="scene">
+				<a-entity class="scene4"><a-sphere id="x4" color="green" onclick= "xrun(6)" position="5 -5 5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene6"><a-sphere id="x6" color="green" onclick="xrun(4)" position="10 -5 -5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene5"><a-sphere id="x5" color="green" onclick="xrun(18)" position="10 -5 -5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene18"><a-sphere id="x18" color="green" onclick="xrun(5)" position="5 -10 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene33"><a-sphere id="x33" color="green" onclick="xrun(18)" position="-5 -7 10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene33"><a-sphere id="xx33" color="green" onclick="xrun(45)" position="5 -2 10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene18"><a-sphere id="xx18" color="green" onclick="xrun(33)" position="-5 -2 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene45"><a-sphere id="x45" color="green" onclick="xrun(33)" position="-7 -7 -5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene17"><a-sphere id="x17" color="green" onclick="setplace(42); location.href = '../daqiao/index.html';" position="5 -5 5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene17"><a-sphere id="xx17" color="green" onclick="setplace(56); location.href = '../daqiao/index.html';" position="10 -3 -2" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene32"><a-sphere id="x32" color="green" onclick="setplace(56); location.href = '../daqiao/index.html';" position="-15 -5 5" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene55"><a-sphere id="x55" color="green" onclick="setplace(66); location.href = '../daqiao/index.html';" position="8 -7 7" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene44"><a-sphere id="x44" color="green" onclick="setplace(66); location.href = '../daqiao/index.html';" position="-10 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				<a-entity class="scene5"><a-sphere id="xx5" color="green" onclick="setplace(37); location.href = '../litang/index.html';" position="0 -5 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+			</a-entity>
+			</a-entity>
+		</a-scene>
+	</div>
+</body>
+</html>
