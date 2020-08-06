@@ -1,9 +1,9 @@
 @font-face {
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
 }
 
 @font-face {
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
 }
 
 * {
@@ -12,7 +12,7 @@
 
 html {
   min-height: 100vh;
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 .page-title {
   color: #FF6D00;
-  font-family: Microsoft YaHei;
+  font-family: MicrosoftYaHei;
   font-weight: normal;
   text-align: center;
   font-size: 6em;
@@ -37,7 +37,7 @@ body {
 
 .game-info {
   color: #1d7fcb;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 .game-container {
@@ -77,11 +77,11 @@ body {
 .card.visible .card-front {
   transform: rotateY(0); 
 }
-
+/*
 .card.matched .card-front .card-value {
   animation: dance 1s linear infinite 500ms;
 }
-
+*/
 .card-back {
   background-color: black;
   border-color: #FF6D00;
@@ -120,19 +120,19 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 50;
   display: none;
   position: fixed;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #FF6D00;
-  font-family: Creepy, serif;
+  font-family: MicrosoftYaHei;
   transition: background-color 500ms, font-size 500ms;
 }
 
 .overlay-text-small {
-  font-size: 1em;
+  font-size:  45px;
 }
 
 .overlay-text.visible {
@@ -160,7 +160,7 @@ body {
   }
   to {
     background-color: rgba(0, 0, 0, .8);
-    font-size: 10em;
+    font-size: 3em;
   }
 }
 
