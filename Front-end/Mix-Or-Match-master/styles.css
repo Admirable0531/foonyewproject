@@ -17,12 +17,11 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(#29323c,  #485563);
-  user-select: none;
+  background: linear-gradient(0deg, #e1b382, #c89666, #2d545e, #12343b);
 }
 
 .page-title {
-  color: #FF6D00;
+  color: white;
   font-family: MicrosoftYaHei;
   font-weight: normal;
   text-align: center;
@@ -36,7 +35,7 @@ body {
 }
 
 .game-info {
-  color: #1d7fcb;
+  color: white;
   font-size: 1.5em;
 }
 
@@ -83,8 +82,8 @@ body {
 }
 */
 .card-back {
-  background-color: black;
-  border-color: #FF6D00;
+  background-color: white;
+  border-color: black;
   transform: rotateY(0); 
 }
 
@@ -92,7 +91,6 @@ body {
 .spider {
   align-self: flex-start;
   transition: transform 100ms ease-in-out;
-  transform: translateY(40px);
 }
 
 .card-back:hover .spider {
@@ -126,7 +124,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #FF6D00;
+  color: white;
   font-family: MicrosoftYaHei;
   transition: background-color 500ms, font-size 500ms;
 }
@@ -164,10 +162,12 @@ body {
   }
 }
 
+
 @media (max-width: 600px) {
 
+
   .overlay-text-small{
-  font-size: .03em;
+  font-size: 1em;
   }
 
   .page-title {
@@ -181,8 +181,8 @@ body {
 
   .card {
   position: relative;
-  height: 175px;
-  width: 125px;
+  height: 160px;
+  width: 110px;
   }
 
 
