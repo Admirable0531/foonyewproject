@@ -138,6 +138,16 @@ body {
   animation: overlay-grow 500ms forwards;
 }
 
+.button {
+  background-color: hotpink;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 /*
 @keyframes dance {
   0%, 100% {
@@ -193,5 +203,15 @@ body {
   .game-info-container {
     flex-direction: row;
     align-items: center;
+  }
+  .button {
+  background-color: hotpink;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   }
 }

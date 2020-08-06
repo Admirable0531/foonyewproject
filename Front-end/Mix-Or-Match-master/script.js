@@ -33,6 +33,8 @@ class MixOrMatch {
     gameOver() {
         clearInterval(this.countdown);
         document.getElementById('game-over-text').classList.add('visible');
+        
+
     }
     victory() {
         clearInterval(this.countdown);
