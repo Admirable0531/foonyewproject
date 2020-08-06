@@ -62,7 +62,6 @@
                                             <option value="fy5">宽柔五小</option>
                                             <option value="fyjb">新山宽柔中学</option>
                                             <option value="fyk">宽柔中学古来分校</option>
-                                            <option value="others">其他</option>
                                         </select>
                                         <div class="select-dropdown"></div>
                                     </div>
@@ -74,9 +73,7 @@
                                             <option value="">身份</option>
                                             <!--<option disabled="disabled" selected="selected" >身份</option>-->
                                             <option value="fystudent">宽柔在籍生</option>
-                                            <option value="fystaff">宽柔教职员</option>
-                                            <option value="fyalumni">宽柔校友</option>
-                                            <option value="others">校外人士</option>                                 
+                                            <option value="fystaff">宽柔教职员</option>                           
                                         </select>
                                         <div class="select-dropdown"></div>
                                     </div>
@@ -87,7 +84,7 @@
 
                  
                         <div>
-                            <a href="https://147.158.231.137/link/guide/redbrick/index.html">访客参观 （请阅读“条款与条件”） </a>
+                            <a href="https://147.158.231.137/link/guide/redbrick/index.html">校外人士请点击这里参观</a>
                             <br>
                             <br>
                             <label id="terms_and_conditions">我已经阅读并同意<a href="../Terms and Conditions/tnc.html" target="_blank">“条款与条件”</a></label>
