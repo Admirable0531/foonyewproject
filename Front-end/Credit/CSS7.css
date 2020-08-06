@@ -8,8 +8,7 @@ font-family:MicrosoftYaHei ;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	display: flex;
-	justify-content: center;
+
 	align-items: center;
 	background-image: url("pattern.png");
 	height: 250%;
@@ -83,18 +82,20 @@ p {
 	font-weight: 500;
 }
 
+/*
 a {
-    position: relative;
-	display: inline-block;
+	align-content: center;
 	padding: 10px 25px;
 	background: #ff0562;
 	color: #fff;
+	align-content: center;
 	text-decoration: none;
+	text-align: center;
 	margin-top: 25px;
 	border-radius: 25px;
 	border-bottom: 4px solid #d00d56;
 }
-
+*/
 
 body::-webkit-scrollbar {
   width: 1em;
