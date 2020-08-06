@@ -1,38 +1,36 @@
 body {
-font-family:MicrosoftYaHei ;
+	font-family: MicrosoftYaHei;
 }
 
-#bg { 
-	position: absolute;
+#bg {
+	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
-
-	align-items: center;
+	min-width: 100%;
+	min-height: 100%;
 	background-image: url("pattern.png");
-	height: 250%;
 }
 
 .outer-wrapper {
-position: relative;
-height: 20px;
+	position: relative;
+	height: 20px;
 }
 
 .wrapper {
-position: relative;
-margin:100px auto;
-z-index: 1;
-background-color: white;
-padding: 50px;
-box-shadow: 0 10px 30px rgba(0,0,0,.1);
-top: 100%;
-width: 50%;
-text-align: left;
-color: #fff;
-/*animation: 45s credits linear infinite;
+	position: relative;
+	margin: 100px auto;
+	z-index: 1;
+	background-color: white;
+	padding: 50px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+	top: 100%;
+	width: 50%;
+	text-align: left;
+	color: #fff;
+	/*animation: 45s credits linear infinite;
 animation-delay: 1.5s;*/
 }
+
 
 /*
 .video_title {
@@ -56,21 +54,18 @@ margin-bottom: 20px;
 */
 
 h2 {
-
 	background-color: lightgoldenrodyellow;
 	text-align: center;
 	font-size: 34px;
 	color: darkgoldenrod;
 	font-weight: 500;
-
 }
 
 h3 {
- 	
 	text-align: center;
 	font-size: 30px;
 	color: darkblue;
-	font-weight: 600; 
+	font-weight: 600;
 	display: block;
 }
 
@@ -82,52 +77,49 @@ p {
 	font-weight: 500;
 }
 
-/*
 a {
-	align-content: center;
+	position: relative;
+	display: inline-block;
 	padding: 10px 25px;
 	background: #ff0562;
 	color: #fff;
-	align-content: center;
 	text-decoration: none;
-	text-align: center;
 	margin-top: 25px;
 	border-radius: 25px;
 	border-bottom: 4px solid #d00d56;
 }
-*/
 
 body::-webkit-scrollbar {
-  width: 1em;
-}
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: pink;
-  outline: 1px solid slategrey;
+	width: 1em;
 }
 
-@keyframes credits { 
-0% { 
-top: 100%; } 
-100% { 
-top: -1300%; 
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: pink;
+	outline: 1px solid slategrey;
+}
+
+@keyframes credits {
+	0% {
+		top: 100%;
+	}
+	100% {
+		top: -1300%;
 	}
 }
 
 @media only screen and (max-width: 500px) {
-	h2{
+	h2 {
 		font-size: 18.5px;
 		font-weight: 700;
 	}
-	h3{
+	h3 {
 		font-size: 15px;
 	}
-	p{
+	p {
 		font-size: 15px;
 	}
 }
-
