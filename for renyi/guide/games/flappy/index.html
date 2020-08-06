@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flappy Ball</title>
+  <link href="style.css" rel="stylesheet">
+  <script defer src="popup.js"></script>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+</head>
+<body>
+  <button data-modal-target="#modal">Play Game</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Flappy Ball</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body" id="game-content">
+      <script src="sketch.js"></script>
+      <script src="bird.js"></script>
+      <script src="pipe.js"></script>
+      <script src="floor.js"></script>
+    </div>
+    <div class="submit"><button data-submit-button class="submit-button">Submit Score</button></div>
+  </div>
+  <div id="overlay"></div>
+</body>
+</html>
