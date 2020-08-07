@@ -1,0 +1,68 @@
+
+/*============= IMAGE SLIDER =============*/
+
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+}
+
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+.carousel-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-inner img {
+  width: 100%;
+  max-height: 45vh;
+}
+
+.paragraph 
+{
+  z-index: 1;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  text-align: center;
+}
+
+.youtube
+{
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cilents img
+{
+  width: 100%;
+  border-radius: 50%;
+}
+
+hr.light-100{
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+.president img
+{
+  width: 100%;
+  border-radius: 50%;
+}
