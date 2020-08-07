@@ -114,8 +114,6 @@ body {
   transform: rotateY(180deg);
 }
 
-
-
 .overlay-text {
   top: 0;
   left: 0;
@@ -141,37 +139,15 @@ body {
   animation: overlay-grow 500ms forwards;
 }
 
-.restart-button {
-  background-color: white;
+.button {
+  background-color: hotpink;
   border: none;
-  color: black;
+  color: white;
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-
-}
-
-.back-btn {
-  background-color: hotpink;
-  border: none;
-  color: white;
-  padding: 5px 5px;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px
-}
-
-.start-btn {
-  background-color: white;
-  border: none;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 50px; 
+  font-size: 16px;
 }
 /*
 @keyframes dance {
@@ -229,15 +205,14 @@ body {
     flex-direction: row;
     align-items: center;
   }
-
- .back-btn {
+  .button {
   background-color: hotpink;
   border: none;
   color: white;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px
-}
-
+  font-size: 16px;
+  }
 }
