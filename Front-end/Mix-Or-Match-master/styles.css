@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   background: linear-gradient(0deg, #e1b382, #c89666, #2d545e, #12343b);
+  user-select: none;
 }
 
 .page-title {

@@ -1,227 +1,178 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
-  <meta charset="utf-8">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
-  <link rel="manifest" href="../Favicon/site.webmanifest">
-  <link rel="mask-icon" href="../Favicon/safari-pinned-tab.svg" color="#000000">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../Favicon/mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-  <link href="styles.css" rel="stylesheet">
-
-  <script src="script.js"></script>
-  <title>配对游戏</title>
-
-</head>
-
-<body>
-  <h1 class="page-title">配对游戏</h1>
-  
-  <div class="overlay-text visible">
-    点击开始
-  </div>
-  
-  <div id="game-over-text" class="overlay-text">
-    游戏结束
-    <span class="overlay-text-small">重新开始</span>
-  </div>
-  
-  <div id="victory-text" class="overlay-text">
-    胜利
-    <span class="overlay-text-small">重新开始</span>
-  </div>
-
-  <div class="game-container">
-    <div class="game-info-container">
-      
-      <div class="game-info">
-        时间 <span id="time-remaining">107</span>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+      <link rel="manifest" href="../Favicon/site.webmanifest">
+      <link rel="mask-icon" href="../Favicon/safari-pinned-tab.svg" color="#000000">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="../Favicon/mstile-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link href="styles.css" rel="stylesheet">
+      <script src="script.js"></script>
+      <title>配对游戏</title>
+   </head>
+   <body>
+      <h1 class="page-title">配对游戏</h1>
+      <div class="overlay-text visible">
+         <button>点击开始</button>
       </div>
-      
-      <form action="#" method="get">
-      <button type="submit" formaction="1.html" class="button">回到校庆导览</button>
-      </form>
-
-      <div class="game-info">
-        翻牌数 <span id="flips">0</span>
+      <div id="game-over-text" class="overlay-text">
+         游戏结束
+         <button class="overlay-text-small">重新开始</button  >
       </div>
-    </div>
-    
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
+      <div id="victory-text" class="overlay-text">
+         胜利
+         <button class="overlay-text-small">重新开始</button>
       </div>
-      
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/zzx.png">
+      <div class="game-container">
+         <div class="game-info-container">
+            <div class="game-info">
+               时间 <span id="time-remaining">107</span>
+            </div>
+          
+             <form action="#" method="get">
+            <button type="submit" formaction="1.html" class="button">回到校庆导览</button>
+            </form>
+
+            <div class="game-info">
+               翻牌数 <span id="flips">0</span>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/zzx.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/zzx.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/hong-hui-e.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/hong-hui-e.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/huang-jin-fa.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/huang-jin-fa.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/ye-yun-cai.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/ye-yun-cai.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/liang-kai-ming.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/liang-kai-ming.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/he-shun-cheng.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/he-shun-cheng.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/lin-fu-liang.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <<img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/lin-fu-liang.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <<img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/kz1.png">
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-back card-face">
+               <<img class="spider" src="Assets/Images/logo.png">
+            </div>
+            <div class="card-front card-face">
+               <img class="card-value" src="Assets/Images/kz1.png">
+            </div>
+         </div>
+         <!--我们的统测应该是完了-->
       </div>
-    </div>
-    
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-    <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/zzx.png">
-      </div>
-    </div>
-    
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/hong-hui-e.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/hong-hui-e.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/huang-jin-fa.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/huang-jin-fa.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/ye-yun-cai.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/ye-yun-cai.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/liang-kai-ming.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/liang-kai-ming.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/he-shun-cheng.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/he-shun-cheng.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/lin-fu-liang.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <<img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/lin-fu-liang.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <<img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/kz1.png">
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-back card-face">
-        <<img class="spider" src="Assets/Images/logo.png">
-      </div>
-
-      <div class="card-front card-face">
-        <img class="card-value" src="Assets/Images/kz1.png">
-      </div>
-    </div>
-
-
-
-
-
-<!--我们的统测应该是完了-->
-    
-
-  </div> 
-</body> <!--This Mix-Or-Match game is created by WebDevSimplified https://github.com/WebDevSimplified/Mix-Or-Match-->
+   </body>
+   <!--This Mix-Or-Match game is created by WebDevSimplified https://github.com/WebDevSimplified/Mix-Or-Match-->
 </html>
