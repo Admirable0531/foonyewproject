@@ -13,6 +13,6 @@ if ($conn->connect_error) {
 
 $add = 1;
 
-$sql = "INSERT INTO token (token_id) VALUES ('$token')";
+$sql = "INSERT INTO mom (add) VALUES ('$add')";
 
 ?>
