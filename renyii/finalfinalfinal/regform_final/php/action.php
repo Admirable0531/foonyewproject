@@ -1,8 +1,8 @@
 <?php
-    $servername = "128.199.221.94";
-    $username = "yhphdrqswp";
-    $password = "n5Cu5YgZYy";
-    $dbname = "yhphdrqswp";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "fyp-db";
 
 require('sessions.inc.php');
 
