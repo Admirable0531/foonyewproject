@@ -1,150 +1,191 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Wilio Survey, Quotation, Review and Register form Wizard by Ansonika.">
+    <meta name="author" content="Ansonika">
+    <title>107周年线上校庆问答题</title>
+
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 	
-	<title>PHP Quiz</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+
 </head>
 
 <body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	<!-- /menu -->
+	
+	<div class="container-fluid full-height">
+		<div class="row row-height">
+			<div class="col-lg-6 content-left">
+				<div class="content-left-wrapper">
+					<div>
+						<h2>107周年校庆线上问答题</h2>
+						<p>每日跟新题目，做这份问答题来尝试你对宽柔历史的熟度</p>
+					</div>
+				</div>
+				<!-- /content-left-wrapper -->
+			</div>
+			<!-- /content-left -->
 
-	<div id="page-wrap">
-
-		<h1>趣味导览常识题</h1>
-		
-		<form action="grade.php" method="post" id="quiz">
-		
-            <ol>
+			<div class="col-lg-6 content-right text-center" id="start">
+				<form action="grade.php" method="post" id="quiz" style="height: 100%;" class="form">
+    
+            <ol class="uwu">
             
                 <li>
                 
-                    <h3>以下哪栋楼宇为我校现存最古老的建筑物？</h3>
+                    <h3>郭钦鉴楼的命名与以下哪位名人有关？</h3>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) 敬业楼</label>
+                        <label for="question-1-answers-A">A) 郭鹤尧</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) 乐群楼</label>
+                        <label for="question-1-answers-B">B) 郭鹤尧</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C) 宽柔大礼堂</label>
+                        <label for="question-1-answers-C">C) 郭鹤尧</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) 新山福建会馆楼</label>
+                        <label for="question-1-answers-D">D) 郭鹤尧</label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>早期称敬业楼为____。</h3>
+                    <h3>我校的郭钦鉴楼内设有多个馆室，请问以下哪个馆室不在这栋楼宇内？</h3>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
-                        <label for="question-2-answers-A">A) 东楼</label>
+                        <label for="question-2-answers-A">A) 课室</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                        <label for="question-2-answers-B">B) 西楼</label>
+                        <label for="question-2-answers-B">B) 教师办公室</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
-                        <label for="question-2-answers-C">C) 北楼</label>
+                        <label for="question-2-answers-C">C) 创客教室</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
-                        <label for="question-2-answers-D">D) 南楼</label>
+                        <label for="question-2-answers-D">D) 科学实验室</label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>早期称乐群楼为____。</h3>
+                    <h3>请问我校的郭郑格如楼的建设用途为何？</h3>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
-                        <label for="question-3-answers-A">A) 东楼</label>
+                        <label for="question-3-answers-A">A) 上课</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
-                        <label for="question-3-answers-B">B) 西楼</label>
+                        <label for="question-3-answers-B">B) 体育校队训练场所</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
-                        <label for="question-3-answers-C">C) 北楼</label>
+                        <label for="question-3-answers-C">C) 多层停车场</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
-                        <label for="question-3-answers-D">D) 南楼</label>
+                        <label for="question-3-answers-D">D) 学生宿舍</label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>郭钦鉴楼于____年正式启用。</h3>
+                    <h3>新山宽柔中学于____年恢复实施单班制。</h3>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
-                        <label for="question-4-answers-A">A) 2016</label>
+                        <label for="question-4-answers-A">A) 2015</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
-                        <label for="question-4-answers-B">B) 2017</label>
+                        <label for="question-4-answers-B">B) 2016</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
-                        <label for="question-4-answers-C">C) 2018</label>
+                        <label for="question-4-answers-C">C) 2017</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
-                        <label for="question-4-answers-D">D) 2019</label>
+                        <label for="question-4-answers-D">D) 2018</label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>以下哪个行政部门设立在郭钦鉴楼？</h3>
+                    <h3>以下哪所学校不是我校的姐妹校？</h3>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
-                        <label for="question-5-answers-A">A) 会计部</label>
+                        <label for="question-5-answers-A">A) 马来西亚槟城韩江中学</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
-                        <label for="question-5-answers-B">B) 升学辅导处</label>
+                        <label for="question-5-answers-B">B) 台湾国立淡水高级商业工职学校</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
-                        <label for="question-5-answers-C">C) 资讯资源处</label>
+                        <label for="question-5-answers-C">C) 台湾高雄市高雄高级中学</label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
-                        <label for="question-5-answers-D">D) 人力资源处</label>
+                        <label for="question-5-answers-D">D) 中国上海华东师范大学</label>
                     </div>
                 
                 </li>
@@ -153,20 +194,17 @@
             
             <input type="submit" value="Submit Quiz" />
 		
-		</form>
-	
+        </form>
+			</div>
+			<!-- /content-right-->
+		</div>
+		<!-- /row-->
 	</div>
-	
-	<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	var pageTracker = _gat._getTracker("UA-68528-29");
-	pageTracker._initData();
-	pageTracker._trackPageview();
-	</script>
-
+	<!-- /container-fluid -->
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common_scripts.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/functions.js"></script>
 </body>
-
 </html>

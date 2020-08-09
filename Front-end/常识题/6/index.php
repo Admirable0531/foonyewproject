@@ -1,23 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Wilio Survey, Quotation, Review and Register form Wizard by Ansonika.">
+    <meta name="author" content="Ansonika">
+    <title>107周年线上校庆问答题</title>
+
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 	
-	<title>PHP Quiz</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+
 </head>
 
 <body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	<!-- /menu -->
+	
+	<div class="container-fluid full-height">
+		<div class="row row-height">
+			<div class="col-lg-6 content-left">
+				<div class="content-left-wrapper">
+					<div>
+						<h2>107周年校庆线上问答题</h2>
+						<p>每日跟新题目，做这份问答题来尝试你对宽柔历史的熟度</p>
+					</div>
+				</div>
+				<!-- /content-left-wrapper -->
+			</div>
+			<!-- /content-left -->
 
-	<div id="page-wrap">
-
-		<h1>趣味导览常识题</h1>
-		
-		<form action="grade.php" method="post" id="quiz">
-		
-            <ol>
+			<div class="col-lg-6 content-right text-center" id="start">
+				<form action="grade.php" method="post" id="quiz" style="height: 100%;" class="form">
+    
+            <ol class="uwu">
             
                 <li>
                 
@@ -126,7 +167,7 @@
                 
                 <li>
                 
-                    <h3>我我校的小食堂设在哪栋楼宇内？</h3>
+                    <h3>我校的小食堂设在哪栋楼宇内？</h3>
                     
                     <div>
                         <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
@@ -154,20 +195,17 @@
             
             <input type="submit" value="Submit Quiz" />
 		
-		</form>
-	
+        </form>
+			</div>
+			<!-- /content-right-->
+		</div>
+		<!-- /row-->
 	</div>
-	
-	<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-	var pageTracker = _gat._getTracker("UA-68528-29");
-	pageTracker._initData();
-	pageTracker._trackPageview();
-	</script>
-
+	<!-- /container-fluid -->
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common_scripts.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/functions.js"></script>
 </body>
-
 </html>
