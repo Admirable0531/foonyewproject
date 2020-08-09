@@ -1,0 +1,108 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>宽柔中学的趣味导览</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="../games/flappy/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/popupsub.css">
+	<link rel="stylesheet" type="text/css" href="../css/popupmain.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="./js/indexplease.js"></script>
+	<script src="./js/coord.js"></script>
+	<script src="../js/global.js"></script>
+	<script src="../games/flappy/stop/sketch.js"></script>
+	<script defer src="../games/flappy/stop/popup.js"></script>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+
+</head>
+<body>
+	<div>
+      <form action="connect.php" method="post" id="form" hidden>
+        <input name="score" id="highscore" value="" hidden>
+	</div>
+	<div class="menu-container" style="z-index: 10;display: none;" id="nav">
+	<div class="button-nav">
+  传送门
+		  <span class="fas fa-bars"></span>
+		</div>
+  <ul>
+  <li onclick="setplace(1); location.href = '../redbrick/index.html';"><a>入口</a></li>
+  <li onclick="setplace(12); location.href = '../library/index.html';"><a>小食堂</a></li>
+  <li onclick="setplace(49); location.href = '../canteen/index.html';"><a>音乐室</a></li>
+  <li onclick="setplace(42); location.href = '../library/index.html';"><a>图书馆</a></li>
+  <li onclick="setplace(40); location.href = '../daqiao/index.html';"><a>实验室</a></li>
+  <li onclick="setplace(33); location.href = '../jk/index.html';"><a>边疆</a></li>
+  <li onclick="setplace(10); location.href = '../redbrick/index.html';"><a>草场</a></li>
+  <li onclick="setplace(51); location.href = '../library/index.html';"><a>文物室</a></li>
+  <li onclick="setplace(44); location.href = '../litang/index.html';"><a>天台</a></li>
+  <li onclick="setplace(28); location.href = '../litang/index.html';"><a>宿舍</a></li>
+  <li onclick="setplace(4); location.href = '../library/index.html';"><a>孔子像</a></li>
+  <li onclick="setplace(5); location.href = '../litang/index.html';"><a>礼堂</a></li>
+  <li onclick="location.href = '../games/quiz/index.php';"><a>问答题</a></li>
+  <li onclick="location.href = '../../front/ending/index.html';"><a>结束</a></li>
+  </ul>
+  </div>
+
+	<button class="button button-game" type="button" id="flappy" style="z-index: 10; position: relative;display: none;" data-modal-target="#modal">玩游戏</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">Flappy Ball</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div style="z-index: 10; position: relative;" class="modal-body" id="game-content">
+			<script src="../games/flappy/bird.js"></script>
+			<script src="../games/flappy/pipe.js"></script>
+			<script src="../games/flappy/floor.js"></script>
+		</div>
+	</div>
+	
+	<button id="audio" type="button" class="button button-2 btn-info" onclick="audioaudio();" data-target="#demo"><span>录音解说 </span></button>
+	<audio id="audio1">
+		<source src="../recordings/door1.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="audio2">
+		<source src="../recordings/door2.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="audio3">
+		<source src="../recordings/field.mp3" type="audio/mpeg">
+	</audio>
+	<div id="vr">
+		<a-scene>
+			<a-assets id="assets">
+			</a-assets>
+
+			<a-assets>
+				<img id="1" src="pictures/(1).JPG" rotation="0 -90 0">
+				<img id="2" src="pictures/(2).JPG" rotation="0 -90 0">
+				<img id="3" src="pictures/(3).JPG" rotation="0 -90 0">
+				<img id="6" src="pictures/(6).JPG" rotation="0 -90 0">
+				<img id="7" src="pictures/(7).JPG" rotation="0 -90 0">
+			</a-assets>
+
+			<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
+
+			<a-sky id="abackground"></a-sky>
+			<a-entity id="scenes">
+			</a-entity>
+			<a-entity id="scene">
+				<a-entity class="scene6"><a-sphere id="xx6" color="green" onclick="setplace(1); location.href = '../jk/index.html';" position="0 -5 -40" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene6"><a-sphere id="x6" color="green" onclick="setplace(33); location.href = '../jk/index.html';" position="40 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene7"><a-sphere id="x7" color="green" onclick="setplace(1); location.href = '../jk/index.html';" position="-20 -6 -2" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene8"><a-sphere id="x8" color="green" onclick="xrun(12);" position="20 -5 -30" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene12"><a-sphere id="x12" color="green" onclick="xrun(8);" position="25 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+				<a-entity class="scene15"><a-sphere id="x15" color="green" onclick="setplace(12); location.href = '../daqiao/index.html';" position="10 -5 10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+			</a-entity>
+		</a-scene>
+	</div>
+	<div id="overlay"></div>
+</body>
+</html>
