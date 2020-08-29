@@ -1,0 +1,118 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>宽柔中学的趣味导览</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/popupsub.css">
+	<link rel="stylesheet" type="text/css" href="../css/popupmain.css">
+	<script defer src="./js/index.js"></script>
+	<script src="../js/global.js"></script>
+	<script src="./js/coord.js"></script>
+	<link href="../games/basketball/style.css" rel="stylesheet">
+	<link href="../games/basketball/popup.css" rel="stylesheet">
+	<script defer src="../games/basketball/stop/popno.js"></script>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+</head>
+<body>
+	<div>
+      <form action="connect.php" method="post" id="form" hidden>
+        <input name="score" id="highscore" value="" hidden>
+    </form>
+	</div>
+	<div class="menu-container" style="z-index: 10;display: none;" id="nav">
+	<div class="button-nav">
+  传送门
+		  <span class="fas fa-bars"></span>
+		</div>
+  <ul>
+  <li onclick="setplace(1); location.href = '../redbrick/index.html';"><a>入口</a></li>
+  <li onclick="setplace(12); location.href = '../library/index.html';"><a>小食堂</a></li>
+  <li onclick="setplace(49); location.href = '../canteen/index.html';"><a>音乐室</a></li>
+  <li onclick="setplace(42); location.href = '../library/index.html';"><a>图书馆</a></li>
+  <li onclick="setplace(40); location.href = '../daqiao/index.html';"><a>实验室</a></li>
+  <li onclick="setplace(33); location.href = '../jk/index.html';"><a>边疆</a></li>
+  <li onclick="setplace(10); location.href = '../redbrick/index.html';"><a>草场</a></li>
+  <li onclick="setplace(51); location.href = '../library/index.html';"><a>文物室</a></li>
+  <li onclick="setplace(44); location.href = '../litang/index.html';"><a>天台</a></li>
+  <li onclick="setplace(28); location.href = '../litang/index.html';"><a>宿舍</a></li>
+  <li onclick="setplace(4); location.href = '../library/index.html';"><a>孔子像</a></li>
+  <li onclick="setplace(5); location.href = '../litang/index.html';"><a>礼堂</a></li>
+  <li onclick="location.href = '../games/quiz/index.php';"><a>问答题</a></li>
+  <li onclick="location.href = '../../front/ending/index.html';"><a>结束</a></li>
+  </ul>
+  </div>
+	<button class="button button-game btn-info" id="ball" style="z-index: 10; position: relative;" data-modal-target="#modal">玩游戏</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">BasketBall</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div style="z-index: 10; position: relative;" class="modal-body" id="game-content">
+			<script src="../games/basketball/stop/gaming.js"></script>
+		</div>
+	</div>
+	<div id="overlay"></div>
+
+
+	<button id="audio" type="button" class="button button-2 btn-info" onclick="audio();" data-target="#demo"><span>录音解说 </span></button>
+	<button id="video" type="button" class="button btn-info" onclick="video();" data-target="#demo"><span>团体影片 </span></button>
+	<div class="youtube youtubecss" id="youtube1">
+		<iframe style="width: 70%; height: 70%; display: inline-block; position: relative;" src="https://www.youtube.com/embed/SWjC6nIeYn8" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+	</div>
+
+	<div class="youtube youtubecss" id="youtube2">
+		<iframe style="width: 70%; height: 70%; display: inline-block; position: relative;" src="https://www.youtube.com/embed/CkAV7qS1iws" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+</div>
+
+		<div class="youtube youtubecss" id="youtube3">
+			<iframe style="width: 70%; height: 70%; display: inline-block; position: relative;" src="https://www.youtube.com/embed/pCNJ5AJ8Uok" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+		</div>
+
+		<div class="youtube youtubecss" id="youtube4">
+			<iframe style="width: 70%; height: 70%; display: inline-block; position: relative;" src="https://www.youtube.com/embed/TAjD-hO1xwg" allowfullscreen frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
+		</div>
+
+		<audio id="audio1">
+			<source src="../recordings/jk.mp3" type="audio/mpeg">
+			</audio>
+			<div id="vr">
+
+				<a-scene>
+					<a-assets id="assets">
+					</a-assets>
+
+					<a-assets>
+						<img id="1" src="pictures/(1).jpg" rotation="0 -90 0">
+						<img id="2" src="pictures/(2).jpg" rotation="0 -90 0">
+						<img id="3" src="pictures/(3).jpg" rotation="0 -90 0">
+						<img id="31" src="pictures/(31).jpg" rotation="0 -90 0">
+						<img id="32" src="pictures/(32).jpg" rotation="0 -90 0">
+						<img id="33" src="pictures/(33).jpg" rotation="0 -90 0">
+					</a-assets>
+
+					<a-entity id="cam" camera="zoom:1" look-controls="reverseMouseDrag: true" cursor="rayOrigin: mouse"></a-entity>
+
+					<a-sky id="abackground"></a-sky>
+					<a-entity id="scenes">
+					</a-entity>
+					<a-entity id="scene">
+						<a-entity class="scene1"><a-sphere id="x1" color="red" onclick="setplace(6) ;location.href = '../redbrick/index.html';" position="-10 -5 15" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+						<a-entity class="scene1"><a-sphere id="xx1" color="green" onclick="setplace(7) ;location.href = '../redbrick/index.html';" position="-10 -5 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+						<a-entity class="scene31"><a-sphere id="x31" color="green" onclick="setplace(1); location.href = '../daqiao/index.html';" position="10 -5 0" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+						<a-entity class="scene33"><a-sphere id="x33" color="green" onclick="setplace(6) ;location.href = '../redbrick/index.html';" position="0 -5 -10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+
+						<a-entity class="scene33"><a-sphere id="box1033" color="blue" onclick="runback(32);" position="0 -5 10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+					</a-entity>
+
+					<a-entity class="scene33"><a-sphere id="box33" color="blue" onclick="runback(32);" position="1000 -5 10" radius="0.001" material="" geometry=""> </a-sphere></a-entity>
+				</a-entity>
+			</a-scene>
+		</div>
+	</body>
+	</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Flashlight Game</title>
+	<link href="style.css" rel="stylesheet">
+	<script defer src="../games/color/popup.js"></script>
+	<script src="../games/color/p5.js"></script>
+  	<script src="../games/color/p5.sound.min.js"></script>
+</head>
+<body>
+	<button data-modal-target="#modal">Play Game</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="title">Flashlight Game</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body" id="game-content">
+			<script src="../games/color/sketch.js"></script>
+		</div>
+		<div class="sliders" id="sliders"></div>
+	</div>
+	<div id="overlay"></div>
+</body></html>
